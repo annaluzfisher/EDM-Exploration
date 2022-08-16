@@ -1,0 +1,5 @@
+icons/
+music/
+*.mp3
+*.wav
+node_modules/

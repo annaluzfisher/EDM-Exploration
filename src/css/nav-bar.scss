@@ -1,0 +1,32 @@
+#nav-bar {
+  margin-top: 0;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(115, 243, 9);
+}
+#nav-left {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid blue;
+}
+
+#nav-left img {
+  margin: 0.5rem;
+  // background-color: rgb(108, 108, 108);
+  /* border-radius: 100%; */
+}
+
+#nav-right {
+  border: 1px solid rgb(255, 55, 0);
+}
+
+#dots {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  color: rgb(120, 25, 253);
+  font-size: 3rem;
+  text-shadow: 1px 1px rgb(170, 164, 164);
+}

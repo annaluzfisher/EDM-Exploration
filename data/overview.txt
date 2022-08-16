@@ -1,0 +1,3 @@
+Welcome back to the 90's
+This project was born from 10 year long passion for good music, good lights, crazy outfits and absolutely amazing human beings. It was also a fun challenge in implementing the traditional tree ADT. Coded with no library and lots of love, this page provides an interactive auditory and visual navigation of the massively popular EDM genre and it's many sub-genres.
+Please Enjoy

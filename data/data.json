@@ -1,0 +1,55 @@
+{
+  "name": "EDM",
+  "children" :[
+    { 
+      "name":"techno",
+      "children" : [
+        { "name" : "acid techno",
+          "content": "Acid techno, sometimes known generally as 'acid', is a genre of techno that was derived from acid house and developed in Europe in the late 1980s to early 1990s. It saw younger artists apply the 'squelching' synthesizer sound of Chicago acid house to harder-edged techno material." },
+        { "name" : "Berlin techno" },
+        { "name" : "deep techno" },
+        { "name" : "Detroit techno" }
+      ]
+    },
+    {
+      "name":"house",
+      "children" : [
+        { "name" : "acid house" },
+        { "name" : "deep house" },
+        { "name" : "Chicago house" },
+        { "name" : "bass house" },
+        { "name" : "electro house" }
+      ]
+    },
+      {
+      "name":"dubstep",
+      "children" : [
+        { "name" : "classic dubstep" },
+        { "name" : "wobblestep" },
+        { "name" : "chillstep" },
+        { "name" : "brostep" }
+      ]
+    },
+     {
+      "name":"trance",
+      "children" : [
+        { "name" : "future trance" },
+        { "name" : "hard trance" },
+        { "name" : "Psytrance" },
+        { "name" : "euro trance" }
+      ]
+    },
+     {
+      "name":"hardcore",
+      "children" : [
+        { "name" : "hard style", "children":[
+          { "name": "dub style"},
+          { "name": "jump style"}
+        ] },
+        { "name" : "breakcore" },
+        { "name" : "gabber" },
+        { "name" : "industrial hardcore" }
+      ]
+    }
+  ]
+}

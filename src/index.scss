@@ -1,0 +1,79 @@
+//google how import
+// @import './src/styles/style.css'
+@import "./css/bubbles.scss";
+@import "./css/audio.scss";
+@import "./css/modals.scss";
+@import './css/nav-bar.scss';
+
+body {
+
+  font-family: 'Bungee Outline';
+  font-weight: 600;
+}
+#background{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+}
+
+.hidden {
+  z-index: -100;
+  opacity: 100;
+  animation-name: pop-away;
+  animation-duration: 1.4s;
+  visibility: hidden;
+}
+
+@keyframes pop-away {
+  from{
+      transform: scale(1);
+  }
+  50%{
+ transform: scale(1.1);
+  }
+  to {
+ transform: scale(0);
+  }
+}
+.hidden > div > #button{
+  font-size: 0;
+  padding: 0;
+ transform: translateY(200px);
+  visibility: hidden;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  // border: 3px solid white;
+  // justify-content: space-around;
+}
+
+#main-content {
+  box-sizing: border-box;
+  padding: 5rem;
+  border: 5px solid pink;
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  // padding: 3rem;
+}
+
+#tree {
+  // border: 3px solid orange;
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:unset;
+}
+
+.hidden-space{
+  width: 1rem;
+  animation-name: show-less;
+}
