@@ -7,8 +7,8 @@ import {
 } from "./scripts/util";
 
 require('./scripts/background');
-require('./scripts/audio');
-
+// require('./scripts/audio');
+import { changeTrack } from './scripts/audio';
 
 document.addEventListener("DOMContentLoaded", async () => {
   startPage();
@@ -31,4 +31,7 @@ const fetchA = async function () {
   return data;
 };
 
+document.addEventListener('keydown',changeTrack);
 
+// consider a rails api. free static server. drag and drop into public folder
+// heroku create git push

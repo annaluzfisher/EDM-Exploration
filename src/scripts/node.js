@@ -195,4 +195,5 @@ function clearThePage() {
     if (bubble.displayed() && bubble.in(mainContent)) bubble.toggleBubbleVisibility();
   });
 }
-export { Node, makeNodes, toggleChildren, toggleSiblings };
+
+export { makeNodes };

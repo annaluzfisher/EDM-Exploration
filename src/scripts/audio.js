@@ -1,14 +1,20 @@
 const houseUrl = "./music/house.mp3";
 let technoUrl = "./music/techno.wav";
+let detroitTechno =
+  "./music/The Belleville Three - live  Tomorrowland 2017 (Belgium)  22.07.2017.mp3";
+
+let testAudio = [houseUrl,technoUrl,detroitTechno]
+
 
 const audioContext = new AudioContext();
 const audioElement = document.querySelector("audio");
-audioElement.setAttribute("src", `${technoUrl}`);
+audioElement.setAttribute("src", `${houseUrl}`);
 const track = audioContext.createMediaElementSource(audioElement);
 //grabbing the source of the track and attaching it to the context
 //like setting the context for canvas?
 const playButton = document.getElementById("play-button");
 const volumeBar = document.getElementById("bar");
+
 
 //destination is usually the speakers. will connect other things to thecontext like create gain
 
@@ -60,3 +66,11 @@ volumeBar.addEventListener("input", () => {
 // };
 
 // function visualize(audioBuffer) {}
+
+function changeTrack(){
+  audioElement.setAttribute("src", `${detroitTechno}`);
+  audioContext.resume();
+  audioElement.play();
+  console.log('were in the function ');
+}
+export { changeTrack };

@@ -55,3 +55,38 @@ color: rgb(68, 5, 136);
   padding-top:2rem;
 }
 
+#bpm{
+  position: absolute;
+  margin-left: 4.5rem;
+ margin-top: 4rem;
+  height : 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  background-image: radial-gradient(rgb(142, 0, 114), rgb(255, 0, 60));
+    -webkit-box-shadow: 0 0 10px 2px rgb(100, 255, 141);
+  -moz-box-shadow: 0 0 10px 2px rgb(100, 255, 141);
+  box-shadow: 0 0 10px 2px rgb(100, 255, 141);
+  animation-name: bop;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  --speed:.5s;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#bpm span {
+  font-size: 3rem;
+}
+
+@keyframes bop {
+  from {
+    transform: scale(.95);
+      background-image: radial-gradient(rgb(188, 3, 135), rgb(255, 0, 60));
+  }
+  to {
+    transform: scale(1.05);
+      background-image: radial-gradient( rgb(255, 0, 60),rgb(203, 3, 163))
+  }
+}
