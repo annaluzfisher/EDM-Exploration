@@ -49,6 +49,7 @@ volumeBar.addEventListener("input", () => {
   console.log(gainNode.gain.value);
 });
 
+
 // let currentBuffer = null;
 
 // const visualizeAudio = (url) => {

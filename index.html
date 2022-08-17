@@ -5,13 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./dist/main.css" rel="stylesheet" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.css"
-    /> -->
+  
     <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
-    <!-- <script src="https://use.fontawesome.com/2996840570.js"></script> -->
+     <script src="https://kit.fontawesome.com/638d88e8f6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <canvas id="background"></canvas>
@@ -33,29 +30,28 @@ This project was born from 10 year long passion for good music, good lights, cra
     <div id="the-page">
       <nav id="nav-bar">
         <div id="nav-left">
-          <img src="../icons/Octocat/Octocat.png" />
-          <img
-            src="../icons/—Pngtree—instagram logo social media instagram_3572487.png"
-          />
+         <i class="fa-brands fa-github fa-3x icon"></i>
+         <i class="fa-brands fa-linkedin fa-3x icon"></i>
+         <i class="fa-brands fa-instagram fa-3x icon"></i>
         </div>
 
         <div id="music-player">
           <audio></audio>
           <div id="player">
             <button id='play-button' data-playing="true" role="switch" aria-checked="false">
-              <span>Play/Pause</span>
+                <i class="fa-solid fa-play fa-3x"></i>
+          <!-- <i class="fa-solid fa-volume-high"></i>
+          <i class="fa-solid fa-volume-xmark"></i> -->
             </button>
-            <!-- <i class="fa-solid fa-play"></i>
-          <i class="fa-solid fa-volume-high"></i>
-          <i class="fa-solid fa-volume-xmark"></i>
-          <i class="fa-solid fa-circle-dot"></i> -->
+         
+         
             <input id="bar" type="range" id="volume" min="0" max="2" value=".5" step="0.01">
           </div>
           <div id="song">Song playing by Artist</div>
         </div>
 
         <div id="nav-right">
-          <i class="fa fa-ellipsis-v" id="dots"></i>
+          <!-- <i class="fa-solid fa-ellipsis-vertical fa-3x icon "></i> -->
         </div>
       </nav>
 

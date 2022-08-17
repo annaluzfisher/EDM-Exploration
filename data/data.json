@@ -2,53 +2,53 @@
   "name": "EDM",
   "children" :[
     { 
-      "name":"techno",
+      "name":"Techno",
       "children" : [
-        { "name" : "acid techno",
+        { "name" : "Acid Techno",
           "content": "Acid techno, sometimes known generally as 'acid', is a genre of techno that was derived from acid house and developed in Europe in the late 1980s to early 1990s. It saw younger artists apply the 'squelching' synthesizer sound of Chicago acid house to harder-edged techno material." },
-        { "name" : "Berlin techno" },
-        { "name" : "deep techno" },
-        { "name" : "Detroit techno" }
+        { "name" : "Berlin Techno" },
+        { "name" : "Deep Techno" },
+        { "name" : "Detroit Techno" }
       ]
     },
     {
-      "name":"house",
+      "name":"House",
       "children" : [
-        { "name" : "acid house" },
-        { "name" : "deep house" },
-        { "name" : "Chicago house" },
-        { "name" : "bass house" },
-        { "name" : "electro house" }
+        { "name" : "Acid House" },
+        { "name" : "Deep House" },
+        { "name" : "Chicago House" },
+        { "name" : "Bass House" },
+        { "name" : "Electro House" }
       ]
     },
       {
-      "name":"dubstep",
+      "name":"Dubstep",
       "children" : [
-        { "name" : "classic dubstep" },
-        { "name" : "wobblestep" },
-        { "name" : "chillstep" },
-        { "name" : "brostep" }
+        { "name" : "Classic Dubstep" },
+        { "name" : "Wobblestep" },
+        { "name" : "Chillstep" },
+        { "name" : "Brostep" }
       ]
     },
      {
-      "name":"trance",
+      "name":"Trance",
       "children" : [
-        { "name" : "future trance" },
-        { "name" : "hard trance" },
+        { "name" : "Future Trance" },
+        { "name" : "Hard Trance" },
         { "name" : "Psytrance" },
-        { "name" : "euro trance" }
+        { "name" : "Euro Trance" }
       ]
     },
      {
-      "name":"hardcore",
+      "name":"Hardcore",
       "children" : [
-        { "name" : "hard style", "children":[
-          { "name": "dub style"},
-          { "name": "jump style"}
+        { "name" : "Hard Style", "children":[
+          { "name": "Dub Style"},
+          { "name": "Jump Style"}
         ] },
-        { "name" : "breakcore" },
-        { "name" : "gabber" },
-        { "name" : "industrial hardcore" }
+        { "name" : "Breakcore" },
+        { "name" : "Gabber" },
+        { "name" : "Industrial Hardcore" }
       ]
     }
   ]

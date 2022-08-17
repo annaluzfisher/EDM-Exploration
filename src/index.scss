@@ -1,9 +1,10 @@
 //google how import
 // @import './src/styles/style.css'
+@import './css/nav-bar.scss';
 @import "./css/bubbles.scss";
 @import "./css/audio.scss";
 @import "./css/modals.scss";
-@import './css/nav-bar.scss';
+
 
 body {
 
@@ -14,7 +15,8 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 0, 29);
+  z-index:-80;
 }
 
 .hidden {
@@ -53,7 +55,7 @@ body {
 #main-content {
   box-sizing: border-box;
   padding: 5rem;
-  border: 5px solid pink;
+  // border: 5px solid pink;
   height: 100vh;
   width: 90vw;
   display: flex;

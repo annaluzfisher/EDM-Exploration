@@ -9,12 +9,13 @@ import {
 
 require('./scripts/background');
 require('./scripts/audio');
-import { myFetch } from './scripts/napster';
+// import { myFetch } from './scripts/napster';
 
 document.addEventListener("DOMContentLoaded", () => {
   startPage();
   makeNodes(data);
-myFetch();
+  toggleOverviewVisibility()
+
 });
 
 
