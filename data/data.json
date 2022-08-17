@@ -18,9 +18,12 @@
     {
       "name":"House",
       "children" : [
-        { "name" : "Acid House", "bpm": "",
-        "content": "The BPM of Acid House is commonly 120-150 BPM. Acid house (also simply known as just 'acid') is a subgenre of house music developed around the mid-1980s by DJs from Chicago. The style is defined primarily by the squelching sounds and basslines of the Roland TB-303 electronic bass synthesizer-sequencer, an innovation attributed to Chicago producers DJ Pierre of Phuture and Sleezy D. Acid house soon became popular in the United Kingdom and continental Europe, where it was played by DJs in the acid house and later rave scenes. By the late 1980s, acid house had moved into the British mainstream, where it had some influence on pop and dance styles.",
-"link": "https://en.wikipedia.org/wiki/Acid_house"},
+        {
+          "name": "Acid House",
+          "content": "The BPM of Acid House is commonly 120-150 BPM. Acid house (also simply known as just 'acid') is a subgenre of house music developed around the mid-1980s by DJs from Chicago. The style is defined primarily by the squelching sounds and basslines of the Roland TB-303 electronic bass synthesizer-sequencer, an innovation attributed to Chicago producers DJ Pierre of Phuture and Sleezy D. Acid house soon became popular in the United Kingdom and continental Europe, where it was played by DJs in the acid house and later rave scenes. By the late 1980s, acid house had moved into the British mainstream, where it had some influence on pop and dance styles.",
+          "link": "https://en.wikipedia.org/wiki/Acid_house",
+          "bpm": "","audio": ""
+        },
         { "name" : "Deep House", 
       "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to the early recordings of Larry Heard (aka Mr. Fingers), including his influential track 'Can You Feel It'.",
 "link": "https://en.wikipedia.org/wiki/Deep_house"},
@@ -48,10 +51,28 @@
      {
       "name":"Trance",
       "children" : [
-        { "name" : "Future Trance" },
-        { "name" : "Hard Trance" },
-        { "name" : "Psytrance" },
-        { "name" : "Euro Trance" }
+        {
+          "name": "Future Trance",
+          "content": "",
+          "link": "",
+          "bpm": "",
+          "audio": ""
+        },
+        {
+          "name": "Hard Trance",
+          "content": "",
+          "link": "",
+          "bpm": "",
+          "audio": ""
+        },
+        { "name" : "Psytrance" , "content":"Psychedelic trance or psytrance for short is a music style. It emerged from the party scene in the hippie pilgrimage town of Goa (India) in the mid-90s. The first artists to create music in this style included Goa Gil, Eat Static, Hallucinogen, Astralasia, Juno Reactor, Zen Paradox, Koxbox, Spicelab and Transwave. The term goa-trance is still used for psychedelic trance.  At the same time the urge to innovate has led to many variations over the years.", "link" :"https://en.wikipedia.org/wiki/Psychedelic_trance" , "bpm" : "150" , "audio" : "psyTrance"},
+        {
+          "name": "Euro Trance",
+          "content": "",
+          "link": "",
+          "bpm": "",
+          "audio": ""
+        }
       ]
     },
      {

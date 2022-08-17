@@ -3,12 +3,13 @@ import {
   startPage,
   button,
   toggleOverviewVisibility,
-  startTheShow
+  startTheShow,
+  bpmBar
 } from "./scripts/util";
 
 require('./scripts/background');
 require('./scripts/audio');
-import { playAudio ,house} from './scripts/audio';
+import { playAudio , house} from './scripts/audio';
 
 document.addEventListener("DOMContentLoaded", async () => {
   startPage();
@@ -16,10 +17,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   makeNodes(data);
   toggleOverviewVisibility()
   startTheShow();
-  playAudio(house);
+  playAudio(house.path);
   // createAudioSource(AUDIOTRACKS[0]);
 });
-
 
 
 button.addEventListener("click", () => {
@@ -33,6 +33,14 @@ const fetchA = async function () {
   return data;
 };
 
+window.addEventListener('click', (e) => {
+  console.log(e.target);
+})
+
+bpmBar.addEventListener('input', function (){
+ let num =  document.getElementById("bpm-number");
+ num.innerHTML = bpmBar.value;
+ })
 // document.addEventListener('keydown',changeTrack);
 
 // consider a rails api. free static server. drag and drop into public folder

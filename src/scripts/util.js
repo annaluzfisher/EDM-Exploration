@@ -11,6 +11,7 @@ const button = document.getElementById("button");
 const innerContentBox = document.getElementById("inner-content-box");
 const contentBox = document.getElementById("content-box");
 const hiddenSpace = document.getElementById("hidden-space");
+const bpmBar = document.getElementById('bpm-bar');
 // const intro = require('../../data/overview.txt')
 let bubbles = [];
 
@@ -44,4 +45,5 @@ export {
   dots,
   startPage,
   toggleOverviewVisibility,
+  bpmBar
 };
