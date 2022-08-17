@@ -74,7 +74,6 @@
   height: 0rem;
   width: 0rem;
   z-index: -100;
-  transition-delay: 1s;
   transition: all 1s ease-in-out;
 }
 
@@ -111,7 +110,7 @@
   background-image: radial-gradient(rgb(0, 255, 89), rgb(11, 3, 105));
   transform: scale(1.4);
   animation-name: pulse;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   color: rgb(255, 140, 0);
   z-index: 100;
@@ -119,10 +118,13 @@
 
 @keyframes pulse {
   from {
-    transform: scale(0.9);
+    transform: scale(0.94);
+  }
+  50% {
+    transform: scale(1.06);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(0.94);
   }
 }
 .visible-bubble > span {
@@ -192,10 +194,18 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-top: 2rem;
 }
 
-#bpm {
+#bpm-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
-  margin-left: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+#bpm {
+  position: relative;
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
@@ -204,17 +214,32 @@ input[type=range]::-webkit-slider-runnable-track {
   -moz-box-shadow: 0 0 10px 2px rgb(100, 255, 141);
   box-shadow: 0 0 10px 2px rgb(100, 255, 141);
   animation-name: bop;
-  animation-duration: 0.5s;
+  animation-duration: var(--speed);
   animation-iteration-count: infinite;
-  --speed:.5s;
+  --speed: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  opacity: 1;
 }
 
-#bpm span {
+#bpm > span {
   font-size: 3rem;
+  color: rgb(72, 231, 4);
+}
+
+#bpm-bar-text {
+  color: rgb(72, 231, 4);
+  font-size: 2rem;
+  margin: -2rem;
+}
+
+#test {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes bop {
@@ -282,13 +307,13 @@ input[type=range]::-webkit-slider-runnable-track {
 #content-box {
   border-radius: 3rem;
   position: fixed;
-  width: 50%;
-  min-width: 600px;
-  height: 40%;
+  width: 40%;
+  min-width: 300px;
+  height: 30%;
   min-height: 400px;
   background-color: rgb(54, 2, 128);
-  margin-left: 12%;
-  margin-top: 11rem;
+  margin-left: 25%;
+  margin-top: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;

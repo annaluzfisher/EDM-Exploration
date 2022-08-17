@@ -38,7 +38,7 @@
   height: 0rem;
   width: 0rem;
   z-index: -100;
-  transition-delay: 1s;
+  // transition-delay: 1s;
   transition: all 1s ease-in-out;
 }
 
@@ -74,7 +74,7 @@
   background-image: radial-gradient(rgb(0, 255, 89), rgb(11, 3, 105));
   transform: scale(1.4);
   animation-name: pulse;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   color: rgb(255, 140, 0);
   z-index: 100;
@@ -83,10 +83,13 @@
 
 @keyframes pulse {
   from {
-    transform: scale(0.9);
+    transform: scale(0.94);
+  }
+  50% {
+    transform: scale(1.06);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(0.94);
     
   }
 }

@@ -4,29 +4,48 @@
     <title>EDM Exploration</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <header name="Access-Control-Allow-Origin" value ="*" ></header>
     <link href="./dist/main.css" rel="stylesheet" />
-  
-    <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
-     <script src="https://kit.fontawesome.com/638d88e8f6.js" crossorigin="anonymous"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee Outline"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/638d88e8f6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <span class="hovertext" data-hover="Take me to wikipedia!"></span>
     <canvas id="background"></canvas>
     <div id="content-box" class="hidden">
       <div id="inner-content-box">
-      <a id="wikipedia" href=""><i class="fa-brands fa-wikipedia-w icon" data-hover="Take me to wikipedia!"></i></a>
-      <span id="title"></span>
+        <a id="wikipedia" href=""
+          ><i
+            class="fa-brands fa-wikipedia-w icon"
+            data-hover="Take me to wikipedia!"
+          ></i
+        ></a>
+        <span id="title"></span>
       </div>
     </div>
     <div id="overview">
       <div>
         <span class="title">Welcome back to the 90's</span>
         <p>
-This project was born from 10 year long passion for good music, good lights, crazy outfits and absolutely amazing human beings. It was also a fun challenge in implementing the traditional tree ADT. Coded with no library and lots of love, this page provides an interactive auditory and visual navigation of the massively popular EDM genre and it's many sub-genres.
-
-</p>
-<p>Please Enjoy</p>
+          This project was born from 10 year long passion for good music, good
+          lights, crazy outfits and absolutely amazing human beings. It was also
+          a fun challenge in implementing the traditional tree ADT. Coded with
+          no library and lots of love, this page provides an interactive
+          auditory and visual navigation of the massively popular EDM genre and
+          it's many sub-genres.
+        </p>
+        <p>Please Enjoy</p>
 
         <div id="button" class="clicked">enter</div>
       </div>
@@ -34,25 +53,17 @@ This project was born from 10 year long passion for good music, good lights, cra
     <div id="the-page">
       <nav id="nav-bar">
         <div id="nav-left">
-         <i class="fa-brands fa-github fa-3x icon"></i>
-         <i class="fa-brands fa-linkedin fa-3x icon"></i>
-         <i class="fa-brands fa-instagram fa-3x icon"></i>
+          <i class="fa-brands fa-github fa-3x icon"></i>
+          <i class="fa-brands fa-linkedin fa-3x icon"></i>
+          <i class="fa-brands fa-instagram fa-3x icon"></i>
         </div>
 
         <div id="music-player">
           <audio></audio>
           <div id="player">
-            <button id='play-button' data-playing="true" role="switch" aria-checked="false">
-                <i class="fa-solid fa-play fa-3x"></i>
-          <!-- <i class="fa-solid fa-volume-high"></i>
-          <i class="fa-solid fa-volume-xmark"></i> -->
-            </button>
-         
-         
-            <input id="bar" type="range" id="volume" min="0" max="2" value=".5" step="0.01">
             
           </div>
-         <span id="song">This is a song that's playing</span>
+          <span id="song">This is a song that's playing</span>
           <!-- <div id="song">Song playing by Artist</div> -->
         </div>
 
@@ -60,7 +71,20 @@ This project was born from 10 year long passion for good music, good lights, cra
           <!-- <i class="fa-solid fa-ellipsis-vertical fa-3x icon "></i> -->
         </div>
       </nav>
-      <div id="bpm"><span id="bpm-number">120</span><span>BPM</span></div>
+      <div id="bpm-wrapper">
+        <div id="bpm"><span id="bpm-number">120</span><span>BPM</span></div>
+        <div id="test">
+          <input
+            id="bpm-bar"
+            type="range"
+            min="60"
+            max="200"
+            value="120"
+            step="1"
+          />
+          <div id="bpm-bar-text"><p>can you feel it?</p></div>
+        </div>
+      </div>
       <div id="wrapper">
         <div id="hidden-space"></div>
         <div id="main-content"></div>
@@ -69,14 +93,11 @@ This project was born from 10 year long passion for good music, good lights, cra
     </div>
 
     <div class="container">
-  <div class="header">
-    Top Tracks
-  </div>
- 
-  <div id="tracks-container"></div>
-</div>
+      <div class="header">Top Tracks</div>
+
+      <div id="tracks-container"></div>
+    </div>
 
     <script src="./dist/main.js"></script>
-    
   </body>
 </html>

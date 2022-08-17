@@ -23,12 +23,11 @@ class Node {
   }
 
   getSiblings() {
-    if (this.parent === "root") return null;
-    if (this.siblings.length > 1) return null;
+    if (this.parent === "root" || !this.siblings) return null;
     else {
-      let siblings = this.parent.children.filter((element) => {
-        return element.name !== this.name;
-      });
+      let siblings = this.parent.children.filter(
+        (element) => element.name !== this.name
+      );
       this.siblings = siblings;
       return siblings.length;
     }
@@ -37,8 +36,8 @@ class Node {
   toggleBubbleVisibility() {
     if (this.displayed()) this.moveToHiddenSpace();
     else {
-        this.moveToMain();
-      }
+      this.moveToMain();
+    }
     this.bubble.classList.toggle("visible-bubble");
     return this.displayed();
   }
@@ -58,13 +57,13 @@ class Node {
 
   makeBubble() {
     let bubble = document.createElement("div");
-    let span = document.createElement('span');
+    let span = document.createElement("span");
     span.innerText = this.name;
     bubble.appendChild(span);
     bubble.classList.add("bubble");
     bubble.classList.add("bubble-transitions");
-    if (this.name === 'edm'){
-      bubble.classList.add('edm');
+    if (this.name === "edm") {
+      bubble.classList.add("edm");
     }
     hiddenSpace.appendChild(bubble);
     return bubble;
@@ -82,10 +81,10 @@ class Node {
     this.location = tree;
   }
 
-  moveToHiddenSpace(){
-     this.bubble.parentNode.removeChild(this.bubble);
-     hiddenSpace.appendChild(this.bubble);
-     this.location = hiddenSpace;
+  moveToHiddenSpace() {
+    this.bubble.parentNode.removeChild(this.bubble);
+    hiddenSpace.appendChild(this.bubble);
+    this.location = hiddenSpace;
   }
 
   displayContent() {
@@ -93,9 +92,9 @@ class Node {
     content.setAttribute("id", "description");
     content.innerText = `${this.content}`;
     innerContentBox.appendChild(content);
-    let link = document.getElementById('wikipedia');
-    link.setAttribute('href',`${this.link}`);
-    let title = document.getElementById('title');
+    let link = document.getElementById("wikipedia");
+    link.setAttribute("href", `${this.link}`);
+    let title = document.getElementById("title");
     title.innerText = `${this.name}`;
     contentBox.classList.toggle("hidden");
   }
@@ -124,7 +123,12 @@ class Node {
 }
 
 function makeNodes(data) {
-  let node = new Node(data["name"], data["children"], data["content"],data["link"]);
+  let node = new Node(
+    data["name"],
+    data["children"],
+    data["content"],
+    data["link"]
+  );
   bubbles.push(node);
   if (data["children"]) {
     makeChildren(data["children"], node);
@@ -175,9 +179,8 @@ function handleBubbleClick(node) {
     clearThePage();
     toggleSiblings(node.siblings);
     node.toggleBubbleVisibility();
-  
-    if (node.contentVisible()) node.toggleContentVisibility();
 
+    if (node.contentVisible()) node.toggleContentVisibility();
   }
 }
 
@@ -192,7 +195,8 @@ function clearTreeBelow(node) {
 function clearThePage() {
   bubbles.forEach((bubble) => {
     console.log(bubble.name, bubble.displayed());
-    if (bubble.displayed() && bubble.in(mainContent)) bubble.toggleBubbleVisibility();
+    if (bubble.displayed() && bubble.in(mainContent))
+      bubble.toggleBubbleVisibility();
   });
 }
 
