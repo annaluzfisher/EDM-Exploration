@@ -11,9 +11,13 @@
      <script src="https://kit.fontawesome.com/638d88e8f6.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <span class="hovertext" data-hover="Take me to wikipedia!"></span>
     <canvas id="background"></canvas>
     <div id="content-box" class="hidden">
-      <div id="inner-content-box" ></div>
+      <div id="inner-content-box">
+      <a id="wikipedia" href=""><i class="fa-brands fa-wikipedia-w icon" data-hover="Take me to wikipedia!"></i></a>
+      <span id="title"></span>
+      </div>
     </div>
     <div id="overview">
       <div>
@@ -46,8 +50,10 @@ This project was born from 10 year long passion for good music, good lights, cra
          
          
             <input id="bar" type="range" id="volume" min="0" max="2" value=".5" step="0.01">
+            
           </div>
-          <div id="song">Song playing by Artist</div>
+         <span id="song">This is a song that's playing</span>
+          <!-- <div id="song">Song playing by Artist</div> -->
         </div>
 
         <div id="nav-right">

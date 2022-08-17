@@ -2,20 +2,20 @@ import { makeNodes } from "./scripts/node";
 import {
   startPage,
   button,
-  data,
   toggleOverviewVisibility,
   startTheShow
 } from "./scripts/util";
 
 require('./scripts/background');
 require('./scripts/audio');
-// import { myFetch } from './scripts/napster';
 
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", async () => {
   startPage();
+  let data = await fetchA();
   makeNodes(data);
   toggleOverviewVisibility()
-
+  startTheShow();
 });
 
 
@@ -25,16 +25,10 @@ button.addEventListener("click", () => {
   setTimeout(startTheShow,4000);
 });
 
+const fetchA = async function () {
+  const getEdmGenres = await fetch("data/data.json");
+  let data = await getEdmGenres.json().catch((err) => console.log(err));
+  return data;
+};
 
-
-
-//QUESTIONS
-
-
-//text in files to later be rendered in html for descriptions
-//using the fetched data from the api. remember you couldn't even use your local file? 
-
-// help with the icons!!! 
-//the children... ask about appending and if that is standards. should that be a node class function? when does it happen if the nodes are all generated at once sort of. aaaaaaaaah!!!
-// github questions
 

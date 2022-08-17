@@ -9,7 +9,7 @@ import {
   hiddenSpace,
 } from "./util";
 class Node {
-  constructor(name, childrenData, content, parent) {
+  constructor(name, childrenData, content, link, parent) {
     this.name = name;
     this.children = [];
     this.childrenData = childrenData;
@@ -19,6 +19,7 @@ class Node {
     this.addListeners();
     this.location = this.bubble.parentNode;
     this.siblings = [];
+    this.link = link;
   }
 
   getSiblings() {
@@ -92,6 +93,10 @@ class Node {
     content.setAttribute("id", "description");
     content.innerText = `${this.content}`;
     innerContentBox.appendChild(content);
+    let link = document.getElementById('wikipedia');
+    link.setAttribute('href',`${this.link}`);
+    let title = document.getElementById('title');
+    title.innerText = `${this.name}`;
     contentBox.classList.toggle("hidden");
   }
 
@@ -119,7 +124,7 @@ class Node {
 }
 
 function makeNodes(data) {
-  let node = new Node(data["name"], data["children"], data["content"]);
+  let node = new Node(data["name"], data["children"], data["content"],data["link"]);
   bubbles.push(node);
   if (data["children"]) {
     makeChildren(data["children"], node);
@@ -134,38 +139,6 @@ function makeChildren(childrenData, parent) {
     child.parent = parent;
   });
 }
-
-//for fetching locally:
-
-// async function makeNodes(data) {
-//   let root = data.genres[0];
-//   // console.log("in MAKE NODES", data.genres[0]);
-//   let node = new Node(root.description, root.id, root.links, root.name);
-//   bubbles.push(node);
-//   // console.log(bubbles);
-//   if (node.childrenData.length > 0) {
-//     await makeChildren(node.childrenData, node);
-//   }
-//   return node;
-// }
-
-// async function makeChildren(ids, parent) {
-//   // console.log(ids[4]);
-//   for (let index = 0; index < ids.length; index++) {
-//     let data = await fetchA(ids[index]);
-//     // console.log('in the children',index,'_____',data.genres[0].name);
-//     if (data.genres[0].links.childGenres) {
-//       let child = await makeNodes(data);
-//       parent.children.push(child);
-//       console.log("parent w kids?", parent.children);
-//       child.parent = parent;
-//     }
-//     // else{
-
-//     // }
-//   }
-// }
-
 
 function toggleChildren(children) {
   if (children === null) return null;
