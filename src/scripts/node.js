@@ -9,7 +9,7 @@ import {
   hiddenSpace,
 } from "./util";
 class Node {
-  constructor(name, childrenData, content, link, parent) {
+  constructor(name, childrenData, content, link, bpm,audio,parent) {
     this.name = name;
     this.children = [];
     this.childrenData = childrenData;
@@ -20,6 +20,9 @@ class Node {
     this.location = this.bubble.parentNode;
     this.siblings = [];
     this.link = link;
+    this.bpm = bpm;
+    this.audio = audio;
+      console.log(audio);
   }
 
   getSiblings() {
@@ -88,12 +91,13 @@ class Node {
   }
 
   displayContent() {
-    let content = document.createElement("p");
-    content.setAttribute("id", "description");
+    
+    let content = document.getElementById("description");
     content.innerText = `${this.content}`;
-    innerContentBox.appendChild(content);
     let link = document.getElementById("wikipedia");
     link.setAttribute("href", `${this.link}`);
+    let waveform = document.getElementById('waveform');
+    waveform.dataset.audio = `${this.audio}`;
     let title = document.getElementById("title");
     title.innerText = `${this.name}`;
     contentBox.classList.toggle("hidden");
@@ -127,8 +131,11 @@ function makeNodes(data) {
     data["name"],
     data["children"],
     data["content"],
-    data["link"]
+    data["link"],
+    data['bpm'],
+    data["audio"]
   );
+  console.log(node.name,node);
   bubbles.push(node);
   if (data["children"]) {
     makeChildren(data["children"], node);

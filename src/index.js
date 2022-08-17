@@ -8,7 +8,7 @@ import {
 
 require('./scripts/background');
 require('./scripts/audio');
-// import { createAudioSource, AUDIOTRACKS } from './scripts/audio';
+import { playAudio ,house} from './scripts/audio';
 
 document.addEventListener("DOMContentLoaded", async () => {
   startPage();
@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   makeNodes(data);
   toggleOverviewVisibility()
   startTheShow();
+  playAudio(house);
   // createAudioSource(AUDIOTRACKS[0]);
 });
 

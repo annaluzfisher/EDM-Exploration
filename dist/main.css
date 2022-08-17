@@ -308,9 +308,9 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 3rem;
   position: fixed;
   width: 40%;
-  min-width: 300px;
+  min-width: 500px;
   height: 30%;
-  min-height: 400px;
+  min-height: 450px;
   background-color: rgb(54, 2, 128);
   margin-left: 25%;
   margin-top: 12rem;
@@ -360,6 +360,17 @@ input[type=range]::-webkit-slider-runnable-track {
 #wikipedia {
   padding-left: 3rem;
   padding-bottom: 1rem;
+}
+
+#waveform {
+  color: rgb(75, 4, 157);
+  padding: 4px;
+}
+
+#waveform:hover, #wikipedia:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  text-shadow: 4, 4, gray;
 }
 
 #button {

@@ -27,7 +27,13 @@
         { "name" : "Big Room House" },
         { "name" : "Bass House" },
         { "name" : "Electro House" },
-         { "name" : "Future House","content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ", "bpm": "126", "link": "https://en.wikipedia.org/wiki/Future_house", "audio": "futureHouse" }
+         {
+           "name": "Future House",
+           "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ",
+           "link": "htps://en.wikipedia.org/wiki/Future_house",
+           "bpm": "126",
+           "audio": "futureHouse"
+         }
       ]
     },
       {
