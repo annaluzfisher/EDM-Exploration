@@ -13,6 +13,7 @@ const psyTrance = {
 };
 const AUDIOTRACKS = [house, techno, detroitTechno, futureHouse,psyTrance];
 //testing work around
+const resultMessage = document.getElementById('result');
 
 function playAudio(pathVariable) {
   let audio = new Audio();
@@ -33,14 +34,24 @@ function playAudio(pathVariable) {
 
 function changeTrack(e) {
   for (let i = 0; i < AUDIOTRACKS.length; i++) {
-    console.log("dataset",e.target.dataset.audio);
-    console.log("from the array",AUDIOTRACKS[3].genre, AUDIOTRACKS[3].genre.prototype);
-    if (e.target.dataset.audio === (AUDIOTRACKS[i].genre)) {
-      playAudio(AUDIOTRACKS[i].path);
+   let audio = e.target.dataset.audio;
+    let genre = AUDIOTRACKS[3].genre
+    if (audio === genre) {
+      swapIt(AUDIOTRACKS[3].path);
     } else {
-      alert("aw snap, we don't have that audio yet");
+     resultMessage.innerText="No Audio Available...yet!";
+      resultMessage.classList.remove("hidden");
+      setTimeout(() => resultMessage.classList.add("hidden"), 4000);
     }
   }
+}
+
+function swapIt(path) {
+  document.getElementById("player").innerHTML="";
+  playAudio(path);
+   resultMessage.innerText = "Click Play on the Player";
+   resultMessage.classList.remove('hidden');
+   setTimeout(() => resultMessage.classList.add("hidden"),4000);
 }
 
 

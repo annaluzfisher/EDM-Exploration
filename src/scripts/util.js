@@ -30,6 +30,9 @@ function startTheShow() {
   root.toggleBubbleVisibility();
 }
 
+function updateBpm(){
+  
+}
 export {
   hiddenSpace,
   startTheShow,

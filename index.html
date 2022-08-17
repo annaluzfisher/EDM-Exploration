@@ -39,6 +39,7 @@
             class="fa-solid fa-music fa-2x icon"
             data-hover="play this genre?"
       ></i>
+      <span id="result" class="hidden"></span>
       </div>
     </div>
     <div id="overview">
@@ -80,7 +81,8 @@
       </nav>
       <div id="bpm-wrapper">
         <div id="bpm"><span id="bpm-number">120</span><span>BPM</span></div>
-        <div id="test">
+        
+        <div id="input-wrapper">
           <input
             id="bpm-bar"
             type="range"
@@ -89,7 +91,7 @@
             value="120"
             step="1"
           />
-          <div id="bpm-bar-text"><p>can you feel it?</p></div>
+          <div id="bpm-bar-text">can you feel it?</div>
         </div>
       </div>
       <div id="wrapper">

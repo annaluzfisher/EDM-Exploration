@@ -20,26 +20,26 @@
   -moz-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
   box-shadow: 0 0 7px 2px rgb(102, 4, 231);
 }
-// audio::-webkit-media-controls-panel{
-//   background-color: aqua;
-// }
-#player{
+
+#player {
   transform: translatey(-41px);
 }
-
 
 input[type="range"]::-webkit-slider-runnable-track {
   --webkit-apperance: none;
   border-radius: 1rem;
-  background-color: rgb(68, 5, 136);
+  transform: scale(1.6);
+  background-image: linear-gradient(to right,
+    rgb(53, 59, 245),
+    rgb(22, 253, 5)
+  );
 }
 
-
-#song {
-  // border: 3px solid white;
-  transform: translatey(-30px);
-  font-family: "Blinker";
-  padding-top: 2rem;
+#input-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #bpm-wrapper {
@@ -50,12 +50,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   position: absolute;
   margin-top: 1rem;
   width: 15rem;
-
- 
 }
 #bpm {
   position: relative;
-
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
@@ -76,21 +73,16 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 #bpm > span {
   font-size: 3rem;
-  color:rgb(72, 231, 4);
-
+  color: rgb(72, 231, 4);
 }
-#bpm-bar-text{
-   color:rgb(72, 231, 4);
-  font-size: 2rem;
-  margin: -2rem;
+#bpm-bar-text {
+  width: 10rem;
+  height: 3rem;
+  color: rgb(72, 231, 4);
+  font-size: 2.1rem;
+  display: inline-block;
+  font-weight: 800;
 }
-#test{
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 
 @keyframes bop {
   from {
