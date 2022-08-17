@@ -135,6 +135,38 @@ function makeChildren(childrenData, parent) {
   });
 }
 
+//for fetching locally:
+
+// async function makeNodes(data) {
+//   let root = data.genres[0];
+//   // console.log("in MAKE NODES", data.genres[0]);
+//   let node = new Node(root.description, root.id, root.links, root.name);
+//   bubbles.push(node);
+//   // console.log(bubbles);
+//   if (node.childrenData.length > 0) {
+//     await makeChildren(node.childrenData, node);
+//   }
+//   return node;
+// }
+
+// async function makeChildren(ids, parent) {
+//   // console.log(ids[4]);
+//   for (let index = 0; index < ids.length; index++) {
+//     let data = await fetchA(ids[index]);
+//     // console.log('in the children',index,'_____',data.genres[0].name);
+//     if (data.genres[0].links.childGenres) {
+//       let child = await makeNodes(data);
+//       parent.children.push(child);
+//       console.log("parent w kids?", parent.children);
+//       child.parent = parent;
+//     }
+//     // else{
+
+//     // }
+//   }
+// }
+
+
 function toggleChildren(children) {
   if (children === null) return null;
   else {
