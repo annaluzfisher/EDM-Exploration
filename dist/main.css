@@ -383,9 +383,9 @@ input[type=range]::-webkit-slider-runnable-track {
 #overview > div > p, div {
   color: rgb(39, 3, 91);
   font-size: 1.3rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  padding-top: 0.2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 .title {
