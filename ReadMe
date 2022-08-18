@@ -1,0 +1,18 @@
+This project was born from a desire to create something I have been tirelessly looking for - a good explanation of EDM and it's subgenres WITH an auditory component. 
+
+The page is expected to allow the user to :
+-- navigate through the edm sub-genres tree via bubbles on the page
+-- see the path taken to the subgenre on the right of the page
+-- play music of each sub-genre
+-- mute music if need be
+-- play with the visual BPM tool
+
+additional features to be added include:
+-- a search bar for key words in descriptions
+-- a constant tree representation of the data below the main visualizer
+-- styles of edm/fashion slideshow 
+
+
+This project was made with vanilla javascript, native HTML audio, css, and lots and lots of love. 
+
+
