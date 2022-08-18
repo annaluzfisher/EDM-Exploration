@@ -459,14 +459,7 @@ input[type=range]::-webkit-slider-runnable-track {
 body {
   font-family: "Bungee Outline";
   font-weight: 600;
-}
-
-#background {
-  height: 100%;
-  width: 100%;
-  position: fixed;
   background-color: rgb(10, 0, 29);
-  z-index: -80;
 }
 
 .hidden {
@@ -545,4 +538,11 @@ body {
   transform: translatex(2rem);
   font-size: 1.6rem;
   color: rgb(65, 1, 156);
+}
+
+#dancer {
+  position: fixed;
+  z-index: -40;
+  margin-left: 7%;
+  opacity: 0.7;
 }

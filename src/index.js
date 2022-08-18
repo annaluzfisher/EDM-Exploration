@@ -8,7 +8,6 @@ import {
   bpmDiv,
 } from "./scripts/util";
 
-require("./scripts/background");
 require("./scripts/audio");
 import { playAudio, darude } from "./scripts/audio";
 
