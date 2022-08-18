@@ -1,15 +1,15 @@
+@import "./css/modals.scss";
 
 body {
-
-  font-family: 'Bungee Outline';
+  font-family: "Bungee Outline";
   font-weight: 600;
 }
-#background{
+#background {
   height: 100%;
   width: 100%;
   position: fixed;
   background-color: rgb(10, 0, 29);
-  z-index:-80;
+  z-index: -80;
 }
 
 .hidden {
@@ -21,27 +21,27 @@ body {
 }
 
 @keyframes pop-away {
-  from{
-      transform: scale(1);
+  from {
+    transform: scale(1);
   }
-  50%{
- transform: scale(1.1);
+  50% {
+    transform: scale(1.1);
   }
   to {
- transform: scale(0);
+    transform: scale(0);
   }
 }
-.hidden > div > #button{
+.hidden > div > #button {
   font-size: 0;
   padding: 0;
- transform: translateY(200px);
+  transform: scale(0.1);
   visibility: hidden;
 }
 
 #wrapper {
   display: flex;
   flex-direction: row;
-  justify-content:right;
+  justify-content: right;
 }
 
 #main-content {
@@ -56,28 +56,26 @@ body {
 }
 
 #tree {
-  
   height: 100vh;
   width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items:unset;
+  align-items: unset;
 }
 
-.hidden-space{
+.hidden-space {
   width: 10%;
   animation-name: show-less;
 }
 
 #instructions {
-  position:relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
 }
-
 
 #instructions > div {
   display: flex;
@@ -89,8 +87,9 @@ body {
 #instructions > p {
   transform: translatex(2rem);
   font-size: 1.6rem;
+  color: rgb(65, 1, 156);
 }
-@import './css/nav-bar.scss';
+
 @import "./css/bubbles.scss";
 @import "./css/audio.scss";
-@import "./css/modals.scss";
+@import "./css/nav-bar.scss";

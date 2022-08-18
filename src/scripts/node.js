@@ -64,7 +64,7 @@ class Node {
     bubble.appendChild(span);
     bubble.classList.add("bubble");
     bubble.classList.add("bubble-transitions");
-    if (this.name === "edm") {
+    if (this.name === "EDM") {
       bubble.classList.add("edm");
     }
     hiddenSpace.appendChild(bubble);

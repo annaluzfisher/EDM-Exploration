@@ -39,19 +39,19 @@
    font-family: 'Blinker';
 }
 
-#overview > div > p,  div {
+#overview > div > p{
   color: rgb(39, 3, 91);
   font-size: 1.3rem;
-  padding-left: .8rem;
-  padding-right: .8rem;
-  padding-top: .4rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
 }
 
 .title{
     font-size: 3.5rem;
   color: rgb(0, 247, 12);
   text-shadow: 2px 2px rgb(1, 136, 3);
-  padding: .7rem;
+  padding-top: 5%;
 }
 
 #content-box {
@@ -136,11 +136,10 @@ text-shadow: 4,4,gray;
   padding-right: 2rem;
   padding-top: .60rem;
   padding-bottom: .60rem;
-  -webkit-box-shadow: 0 0 5px 2px #fff;
-  -moz-box-shadow: 0 0 5px 2px #fff;
-  box-shadow: 0 0 5px 2px #fff;
-  // transition-delay: 1s;
-  transition: all 1s ease-in-out; //transition should belong to the element not the hover
+  -webkit-box-shadow: 0 0 10px 2px #fff;
+  -moz-box-shadow: 0 0 10px 2px #fff;
+  box-shadow: 0 0 10px 2px #fff;
+  transition: all 1s ease-in-out;
 }
 #button:hover {
   padding-left: 500rem;
@@ -148,9 +147,10 @@ text-shadow: 4,4,gray;
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: white;
-  -webkit-box-shadow: 0 0 8px 2px #fff;
-  -moz-box-shadow: 0 0 8px 2px #fff;
-  box-shadow: 0 0 8px 2px #fff;
+  -webkit-box-shadow: 0 0 8px 10px #fff;
+  -moz-box-shadow: 0 0 8px 10px rgb(109, 2, 248);
+  box-shadow: 0 0 8px 10px rgb(137, 248, 133);
   transform: translateY(30px);
+  color:  rgb(17, 8, 119);
 }
 
