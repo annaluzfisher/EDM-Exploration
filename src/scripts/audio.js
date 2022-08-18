@@ -94,7 +94,9 @@ function playAudio(pathVariable) {
 }
 
 function changeTrack(e) {
+  
   for (let i = 0; i < AUDIOTRACKS.length; i++) {
+     resultMessage.innerText = "";
     let audio = e.target.dataset.audio;
     let genre = AUDIOTRACKS[i].genre;
     console.log("audio", audio, "genre", genre);
