@@ -389,6 +389,36 @@ input[type=range]::-webkit-slider-runnable-track {
     background-image: radial-gradient(rgb(255, 0, 60), rgb(203, 3, 163));
   }
 }
+#scroller-wrapper {
+  margin-top: 4%;
+  width: 330px;
+  height: 50px;
+  overflow: hidden;
+}
+
+#scroller {
+  height: inherit;
+  width: 300px;
+  margin-left: 310px;
+  animation-name: scroll;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+#song-title {
+  color: rgb(34, 249, 6);
+  font-family: "Blinker";
+  font-size: 1.2rem;
+}
+
+@keyframes scroll {
+  from {
+    margin-left: 340px;
+  }
+  to {
+    margin-left: -310px;
+  }
+}
 #nav-bar {
   margin-top: 0;
   width: 100vw;
