@@ -1,9 +1,9 @@
 //google how import
 // @import './src/styles/style.css'
-@import './css/nav-bar.scss';
-@import "./css/bubbles.scss";
-@import "./css/audio.scss";
-@import "./css/modals.scss";
+
+element {
+--color1: (rgb(98, 249, 87))
+}
 
 body {
 
@@ -96,3 +96,7 @@ body {
   transform: translatex(2rem);
   font-size: 1.6rem;
 }
+@import './css/nav-bar.scss';
+@import "./css/bubbles.scss";
+@import "./css/audio.scss";
+@import "./css/modals.scss";

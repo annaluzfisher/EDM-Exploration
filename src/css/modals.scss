@@ -57,13 +57,13 @@
 #content-box {
   border-radius: 3rem;
   position: fixed;
-  width: 42%;
-  min-width: 500px;
+  width: 50%;
+  min-width: 600px;
   height: 30%;
-  min-height: 550px;
+  min-height: 570px;
   background-color: rgb(248, 54, 160);
   margin-left: 23%;
-  margin-top: 12rem;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +121,7 @@
 }
 
 #waveform:hover, #wikipedia:hover{
-transform: scale(1.05);
+transform: scale(1.2);
 opacity:.8;
 text-shadow: 4,4,gray;
 

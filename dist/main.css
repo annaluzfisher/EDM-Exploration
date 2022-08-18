@@ -1,6 +1,100 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+element {
+  --color1: (rgb(98, 249, 87)) ;
+}
+
+body {
+  font-family: "Bungee Outline";
+  font-weight: 600;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(10, 0, 29);
+  z-index: -80;
+}
+
+.hidden {
+  z-index: -100;
+  opacity: 100;
+  animation-name: pop-away;
+  animation-duration: 1.4s;
+  visibility: hidden;
+}
+
+@keyframes pop-away {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.hidden > div > #button {
+  font-size: 0;
+  padding: 0;
+  transform: translateY(200px);
+  visibility: hidden;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#main-content {
+  box-sizing: border-box;
+  padding: 5rem;
+  height: 100vh;
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tree {
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: unset;
+}
+
+.hidden-space {
+  width: 10%;
+  animation-name: show-less;
+}
+
+#instructions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#instructions > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#instructions > p {
+  transform: translatex(2rem);
+  font-size: 1.6rem;
+}
+
 #nav-bar {
   margin-top: 0;
   width: 100vw;
@@ -26,7 +120,7 @@
 
 .icon {
   padding-right: 3rem;
-  color: rgb(108, 244, 99);
+  color: var(--color1);
   font-size: 3rem;
   filter: drop-shadow(0 0 7px 2px rgb(200, 250, 174));
 }
@@ -139,21 +233,29 @@
 }
 
 #music-player {
-  background-image: linear-gradient(to bottom right, rgb(244, 13, 248), rgb(40, 255, 65));
+  background-image: linear-gradient(rgb(222, 3, 226), rgb(250, 159, 2));
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
   margin-top: 2rem;
   margin-left: 30rem;
   border-radius: 4rem;
-  height: 3rem;
-  width: 17rem;
-  color: rgb(10, 18, 157);
+  height: 10%;
+  min-height: 80px;
+  width: fit-content;
   z-index: 70;
   -webkit-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
   -moz-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
   box-shadow: 0 0 7px 2px rgb(102, 4, 231);
+}
+
+#player > audio {
+  position: relative;
+}
+
+#player > audio::-webkit-media-controls-panel {
+  background-color: rgb(98, 249, 87);
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -300,13 +402,13 @@ input[type=range]::-webkit-slider-runnable-track {
 #content-box {
   border-radius: 3rem;
   position: fixed;
-  width: 42%;
-  min-width: 500px;
+  width: 50%;
+  min-width: 600px;
   height: 30%;
-  min-height: 550px;
+  min-height: 570px;
   background-color: rgb(248, 54, 160);
   margin-left: 23%;
-  margin-top: 12rem;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +467,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #waveform:hover, #wikipedia:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   opacity: 0.8;
   text-shadow: 4, 4, gray;
 }
@@ -396,94 +498,4 @@ input[type=range]::-webkit-slider-runnable-track {
   -moz-box-shadow: 0 0 8px 2px #fff;
   box-shadow: 0 0 8px 2px #fff;
   transform: translateY(30px);
-}
-
-body {
-  font-family: "Bungee Outline";
-  font-weight: 600;
-}
-
-#background {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: rgb(10, 0, 29);
-  z-index: -80;
-}
-
-.hidden {
-  z-index: -100;
-  opacity: 100;
-  animation-name: pop-away;
-  animation-duration: 1.4s;
-  visibility: hidden;
-}
-
-@keyframes pop-away {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-.hidden > div > #button {
-  font-size: 0;
-  padding: 0;
-  transform: translateY(200px);
-  visibility: hidden;
-}
-
-#wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
-
-#main-content {
-  box-sizing: border-box;
-  padding: 5rem;
-  height: 100vh;
-  width: 65vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#tree {
-  height: 100vh;
-  width: 15vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: unset;
-}
-
-.hidden-space {
-  width: 10%;
-  animation-name: show-less;
-}
-
-#instructions {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-}
-
-#instructions > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#instructions > p {
-  transform: translatex(2rem);
-  font-size: 1.6rem;
 }

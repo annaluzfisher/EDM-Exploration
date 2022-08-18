@@ -148,12 +148,14 @@ function handleBubbleClick(node) {
       node.displayContent();
     }
   } else if (node.in(tree)) {
-    clearTreeBelow(node);
+    if (node.contentVisible()) node.toggleContentVisibility();
+    setTimeout( () => {
+  clearTreeBelow(node);
     clearThePage();
     toggleBubbles(node.siblings);
     node.toggleBubbleVisibility();
+    },800);
 
-    if (node.contentVisible()) node.toggleContentVisibility();
   }
 }
 
