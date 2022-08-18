@@ -18,7 +18,7 @@ class Node {
   }
 
   getContent(content) {
-    if (content === "" || "undefined")
+    if (typeof content === 'undefined')
       return "there is no info for this subgenre";
     else {
       return content;

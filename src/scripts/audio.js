@@ -3,16 +3,20 @@ const house = {genre:'house', path: "./music/house.mp3"};
 const detroitTechno = {genre: "detroitTechno",path : "./music/The Belleville Three - live  Tomorrowland 2017 (Belgium)  22.07.2017.mp3"};
 
 const futureHouse = {genre:'futureHouse',path:"music/Thomas Hayden - Universe.mp3"};
-const psyTrance = {
-  genre: "psyTrance",
-  path: "music/Teknophil (Psk) Mix 4 Decks  Psytrance Juin 2011.mp3",
-};
+
 const speedcore = {
   genre: "speedcore",
   path: "music/01_SPaCeyALieN_Fuck_Your_Faketone_Intro.mp3",
 };
-const minimalTechno = {genre: 'minimalTechno', path: ""}
-const AUDIOTRACKS = [house, detroitTechno, futureHouse,psyTrance,speedcore];
+const minimalTechno = {
+  genre: "minimalTechno",
+  path: "music/Y2Mate.is - Plastikman - Consumed - 01 Contain-LYyRTvxDRMo-160k-1660388413974.mp3",
+};
+const psyTrance = {
+  genre: "psyTrance",
+  path: "music/Y2Mate.is - Becoming Insane-BB1RrGJiOnU-160k-1660146558516.mp3"
+};
+const AUDIOTRACKS = [house, detroitTechno, futureHouse,psyTrance,speedcore,minimalTechno];
 //testing work around
 const resultMessage = document.getElementById('result');
 
@@ -30,6 +34,9 @@ function playAudio(pathVariable) {
   source.connect(analyser);
   analyser.connect(audioContext.destination);
 }
+
+
+
 
 
 
