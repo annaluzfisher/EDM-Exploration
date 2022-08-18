@@ -20,9 +20,9 @@
         },
         {
           "name": "Detroit Techno",
-          "content": "Detroit techno is a type of techno music that generally includes the first techno productions by Detroit-based artists during the 1980s and early 1990s. Prominent Detroit techno artists include Juan Atkins, Eddie Fowlkes, Derrick May, Jeff Mills, Kevin Saunderson, Blake Baxter, Drexciya, Mike Banks, and Robert Hood.",
+          "content": "Detroit techno is a type of techno music that generally includes the first techno productions by Detroit-based artists during the 1980s and early 1990s. Prominent Detroit techno artists include Juan Atkins, Eddie Fowlkes, Derrick May, Jeff Mills, amongst others. Track for listening is a classic: Juan Atkins on 'Cosmic Cars' by Cybotron (1982)(124 BPM)",
           "link": "https://en.wikipedia.org/wiki/Detroit_techno",
-          "bpm": "",
+          "bpm": "124",
           "audio": "detroitTechno"
         },
         {

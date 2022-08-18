@@ -2,7 +2,7 @@ const house = { genre: "house", path: "./music/house.mp3" };
 
 const detroitTechno = {
   genre: "detroitTechno",
-  path: "./music/The Belleville Three - live  Tomorrowland 2017 (Belgium)  22.07.2017.mp3",
+  path: "music/Cybotron - Cosmic Cars ( Fantasy Records 1982 ).mp3",
 };
 
 const futureHouse = {
