@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  // toggleOverviewVisibility();
-  // startTheShow();
   playAudio(house.path);
 });
 

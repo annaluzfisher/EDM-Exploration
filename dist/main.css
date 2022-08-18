@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 #nav-right {
@@ -141,7 +142,7 @@
 }
 
 #music-player {
-  background-image: linear-gradient(to bottom right, rgb(248, 91, 251), rgb(255, 187, 40));
+  background-image: linear-gradient(to bottom right, rgb(244, 13, 248), rgb(40, 255, 65));
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -149,17 +150,13 @@
   margin-top: 2rem;
   margin-left: 30rem;
   border-radius: 4rem;
-  height: 2rem;
+  height: 3rem;
   width: 17rem;
   color: rgb(10, 18, 157);
   z-index: 70;
   -webkit-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
   -moz-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
   box-shadow: 0 0 7px 2px rgb(102, 4, 231);
-}
-
-#player {
-  transform: translatey(-41px);
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -184,6 +181,8 @@ input[type=range]::-webkit-slider-runnable-track {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 40%;
+  width: 100%;
 }
 
 #bpm-wrapper {
@@ -194,6 +193,9 @@ input[type=range]::-webkit-slider-runnable-track {
   position: absolute;
   margin-top: 1rem;
   width: 15rem;
+  min-width: 10rem;
+  height: 25rem;
+  min-height: 15rem;
 }
 
 #bpm {
@@ -247,13 +249,13 @@ input[type=range]::-webkit-slider-runnable-track {
 #overview {
   border-radius: 3rem;
   position: fixed;
-  width: 50%;
+  width: 55%;
   min-width: 600px;
-  height: 40%;
-  min-height: 400px;
-  background-color: rgb(54, 2, 128);
+  height: 60%;
+  min-height: 450px;
+  background-color: rgb(255, 145, 0);
   margin-left: 15%;
-  margin-top: 12%;
+  margin-top: 7%;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -266,7 +268,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 #overview > div {
   border-radius: 3rem;
-  background-color: rgb(216, 250, 196);
+  background-image: radial-gradient(rgb(68, 246, 130), rgb(227, 0, 223));
   opacity: inherit;
   position: relative;
   height: 90%;
@@ -282,13 +284,18 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #overview > div > p, div {
-  padding: 2rem;
   color: rgb(39, 3, 91);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.2rem;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 4rem;
+  color: rgb(0, 247, 12);
+  text-shadow: 2px 2px rgb(1, 136, 3);
+  padding: 0.7rem;
 }
 
 #content-box {
@@ -298,7 +305,7 @@ input[type=range]::-webkit-slider-runnable-track {
   min-width: 500px;
   height: 30%;
   min-height: 510px;
-  background-color: rgb(54, 2, 128);
+  background-color: rgb(248, 54, 160);
   margin-left: 23%;
   margin-top: 12rem;
   display: flex;
@@ -313,8 +320,8 @@ input[type=range]::-webkit-slider-runnable-track {
 
 #content-box > div {
   border-radius: 3rem;
-  background-color: rgb(216, 250, 196);
-  opacity: inherit;
+  background-image: radial-gradient(rgb(68, 246, 130), rgb(11, 1, 124));
+  opacity: 1;
   position: relative;
   height: 90%;
   width: 90%;
@@ -331,7 +338,7 @@ input[type=range]::-webkit-slider-runnable-track {
 #content-box > div > p {
   font-family: "Blinker";
   padding: 1rem;
-  color: rgb(39, 3, 91);
+  color: rgb(116, 0, 107);
   z-index: 100;
   text-align: center;
 }
@@ -341,12 +348,15 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #title {
-  font-size: 30px;
+  font-size: 4rem;
+  color: rgb(247, 132, 0);
+  text-shadow: 2px 2px rgb(173, 81, 1);
 }
 
 #wikipedia {
   padding-left: 3rem;
   padding-bottom: 1rem;
+  color: rgb(77, 247, 86);
 }
 
 #waveform {
@@ -436,7 +446,7 @@ body {
   box-sizing: border-box;
   padding: 5rem;
   height: 100vh;
-  width: 90vw;
+  width: 80vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -455,4 +465,18 @@ body {
 .hidden-space {
   width: 1rem;
   animation-name: show-less;
+}
+
+#instructions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#instructions > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
