@@ -46,6 +46,18 @@ const electroHouse = {
   genre: "electroHouse",
   path: "music/Caravan Palace - Lone Digger.mp3",
 };
+const deepHouse = {
+  genre: "deepHouse",
+  path: "music/Can You Feel It - Mr Fingers (Larry Heard).mp3",
+};
+const gabber = {
+  genre :"gabber",
+  path: "music/Nasenbluten - Cunt Face (ISR030).mp3"
+}
+const jumpStyle = {
+  genre: "jumpStyle",
+  path: "music/Jeckyll & Hyde - Freefall (Official Video HQ).mp3",
+};
 const AUDIOTRACKS = [
   house,
   detroitTechno,
@@ -57,8 +69,12 @@ const AUDIOTRACKS = [
   wobbleStep,
   brostep,
   techHouse,
+  gabber,
+  jumpStyle,
+  deepHouse,
+  electroHouse
 ];
-//testing work around
+
 const resultMessage = document.getElementById("result");
 
 function playAudio(pathVariable) {
@@ -83,8 +99,7 @@ function changeTrack(e) {
     let genre = AUDIOTRACKS[i].genre;
     console.log("audio", audio, "genre", genre);
     if (audio === genre) {
-      swapIt(AUDIOTRACKS[i].path);
-      break;
+     return swapIt(AUDIOTRACKS[i].path);
     } else {
       resultMessage.innerText = "No Audio Available...yet!";
       resultMessage.classList.remove("hidden");

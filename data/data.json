@@ -8,7 +8,7 @@
       "children": [
         {
           "name": "Berlin Techno",
-          "content": "To put this in on genre would be crazy! Techno as it is now grew from the depths of both Chicago and Germany. Over the last three decades, the Berlin scene has fractured and fragmented into countless sounds, subgenres and micro-scenes, from the reggae-inspired dub techno underworld through to the concrete funk of Klockworks, the freewheeling trippiness of Ricardo Villalobos and the gritty industrial edge of Ostgut Ton. The history of Berlin after the fall of the wall allowed for underground warehouse raves across the city, developing a culture following the music. To this day it remains a hub and center for Techno.",
+          "content": "To put this in on genre would be crazy! Techno as it is now grew from the depths of both Chicago and Germany. Over the last three decades, the Berlin scene has fractured and fragmented into countless sounds, subgenres and micro-scenes. The history of Berlin after the fall of the wall allowed for underground warehouse raves across the city, developing a culture following the music. To this day it remains a hub and center for Techno. Song is '' by (BPM)",
           "link": "https://en.wikipedia.org/wiki/Techno#German_techno"
         },
         {
@@ -46,17 +46,19 @@
         },
         {
           "name": "Deep House",
-          "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to the early recordings of Larry Heard (aka Mr. Fingers), including his influential track 'Can You Feel It'.",
-          "link": "https://en.wikipedia.org/wiki/Deep_house"
+          "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to Larry Heard (aka Mr. Fingers). Audio available is his influential track 'Can You Feel It' (122 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Deep_house",
+          "bpm":"122",
+          "audio":"deepHouse"
         },
         { "name": "Electro House",
-      "content" : "Also known as electro swing, this is such a FUN genre to dance to. Combining either jazzy, funky or hip-hop vocals, it is modern and vintage at the same time. The example available is  'Lone Digger' by Caravan Palace. This music video is great! (BPM)",
+      "content" : "Also known as electro swing, this is such a FUN genre to dance to. Combining either jazzy, funky or hip-hop vocals, it is modern and vintage at the same time. The example available is  'Lone Digger' by Caravan Palace. This music video is great! (123 BPM)",
     "link": "https://en.wikipedia.org/wiki/Electro_swing#:~:text=Electro%20swing%2C%20or%20swing%20house,with%20house%20and%20hip%20hop.",
   "bpm":"",
 "audio" :"electroHouse"},
         {
           "name": "Future House",
-          "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ",
+          "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM.(126 BPM) ",
           "link": "htps://en.wikipedia.org/wiki/Future_house",
           "bpm": "126",
           "audio": "futureHouse"
@@ -73,7 +75,7 @@
   "bpm":"",
 "audio": "wobbleStep"},
         { "name": "Chillstep" },
-        { "name": "Brostep" ,"content": "Ah! this is the subgenre that you think of when you think of dubstep, with Skrillex being the most well known name in the genre. It's characterized by being essentially more hardcore than it's UK counterparts, with heavily distorted bass synths, and lots of wubs. It accentuates the middle negative & uses robotic fluctuations & metal-esque aggression. Song playing is 'Scary Monsters and Nice Sprites' by Skrillex. like it? Check out Excision and Datsik.","link" : "https://en.wikipedia.org/wiki/Dubstep#Brostep_and_American_developments", "bpm" : "", "audio" : "brostep"}
+        { "name": "Brostep" ,"content": "Ah! this is the subgenre that you think of when you think of dubstep, with Skrillex being the most well known name in the genre. It's characterized by being essentially more hardcore than it's UK counterparts, with heavily distorted bass synths, and lots of wubs. It accentuates the middle negative & uses robotic fluctuations & metal-esque aggression. Song playing is 'Scary Monsters and Nice Sprites' by Skrillex. (140 BPM) like it? Check out Excision and Datsik.","link" : "https://en.wikipedia.org/wiki/Dubstep#Brostep_and_American_developments", "bpm" : "140", "audio" : "brostep"}
       ]
     },
     {
@@ -114,7 +116,12 @@
       "children": [
         {
           "name": "Hard Style",
-          "children": [{ "name": "Dub Style" }, { "name": "Jump Style" }]
+          "children": [{ "name": "Dub Style" }, 
+          { "name": "Jump Style",
+          "content" : "Light, bouncy and FAST, this genre has roots in the netherlands. Track available hit number one in holland in 2007 and was the first instrumental to hit #1 since 1995. 'Freefall by Jeckyll & Hyde'. (140 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Jumpstyle",
+          "bpm":"140",
+          "audio": "jumpStyle" }]
         },
         {
           "name": "Speedcore",
@@ -125,8 +132,10 @@
         },
         {
           "name": "Gabber",
-          "content": "Originating from Hardcore, Hardcore Techno, New Beat, Acid House and Punk. Characterised by a super fast BPM, distorted kick drums and roared our shouted vocals reminiscent of punk. The BPM of Gabba is typically 180-190 BPM.",
-          "link": "https://en.wikipedia.org/wiki/Gabber"
+          "content": "Originating from Hardcore, Hardcore Techno, New Beat, Acid House and Punk. Characterised by a super fast BPM, distorted kick drums and roared our shouted vocals reminiscent of punk. The BPM of Gabba is typically 180-190 BPM. An absolute classic is the link: 'Cuntface' by Nasenbluten (BPM)",
+          "link": "https://en.wikipedia.org/wiki/Gabber",
+          "bpm": "",
+          "audio" : "gabber"
         },
         { "name": "Industrial Hardcore" }
       ]
