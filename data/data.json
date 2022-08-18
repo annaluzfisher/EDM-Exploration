@@ -1,56 +1,67 @@
 {
   "name": "EDM",
-  "children" :[
-    { 
-      "name":"Techno",
-      "children" : [
-        { "name" : "Berlin Techno",
-      "content": "To put this in on genre would be crazy! Techno as it is now grew from the depths of both Chicago and Germany. Over the last three decades, the Berlin scene has fractured and fragmented into countless sounds, subgenres and micro-scenes, from the reggae-inspired dub techno underworld through to the concrete funk of Klockworks, the freewheeling trippiness of Ricardo Villalobos and the gritty industrial edge of Ostgut Ton. The history of Berlin after the fall of the wall allowed for underground warehouse raves across the city, developing a culture following the music. To this day it remains a hub and center for Techno.",
-    "link": "https://en.wikipedia.org/wiki/Techno#German_techno"},
-        { "name" : "Minimal Techno",
-      "content": " Minimal Techno is not mellow, but it's easier to digest than some of its sibling genres. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell. By the early 2000s the term 'minimal' generally described a style of techno that was popularized in Germany by labels such as Kompakt, Perlon, and Richie Hawtin's M-nus, among others.",
-    "link": "https://en.wikipedia.org/wiki/Minimal_techno" },
-        { "name" : "Detroit Techno",
-      "content": "Detroit techno is a type of techno music that generally includes the first techno productions by Detroit-based artists during the 1980s and early 1990s. Prominent Detroit techno artists include Juan Atkins, Eddie Fowlkes, Derrick May, Jeff Mills, Kevin Saunderson, Blake Baxter, Drexciya, Mike Banks, and Robert Hood.",
-    "link": "https://en.wikipedia.org/wiki/Detroit_techno"}
+  "children": [
+    {
+      "name": "Techno",
+      "children": [
+        {
+          "name": "Berlin Techno",
+          "content": "To put this in on genre would be crazy! Techno as it is now grew from the depths of both Chicago and Germany. Over the last three decades, the Berlin scene has fractured and fragmented into countless sounds, subgenres and micro-scenes, from the reggae-inspired dub techno underworld through to the concrete funk of Klockworks, the freewheeling trippiness of Ricardo Villalobos and the gritty industrial edge of Ostgut Ton. The history of Berlin after the fall of the wall allowed for underground warehouse raves across the city, developing a culture following the music. To this day it remains a hub and center for Techno.",
+          "link": "https://en.wikipedia.org/wiki/Techno#German_techno"
+        },
+        {
+          "name": "Minimal Techno",
+          "content": " Minimal Techno is not mellow, but it's easier to digest than some of its sibling genres. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell. By the early 2000s the term 'minimal' generally described a style of techno that was popularized in Germany by labels such as Kompakt, Perlon, and Richie Hawtin's M-nus, among others.",
+          "link": "https://en.wikipedia.org/wiki/Minimal_techno"
+        },
+        {
+          "name": "Detroit Techno",
+          "content": "Detroit techno is a type of techno music that generally includes the first techno productions by Detroit-based artists during the 1980s and early 1990s. Prominent Detroit techno artists include Juan Atkins, Eddie Fowlkes, Derrick May, Jeff Mills, Kevin Saunderson, Blake Baxter, Drexciya, Mike Banks, and Robert Hood.",
+          "link": "https://en.wikipedia.org/wiki/Detroit_techno",
+          "bpm": "",
+          "audio": "detroitTechno"
+        }
       ]
     },
     {
-      "name":"House",
-      "children" : [
+      "name": "House",
+      "children": [
         {
           "name": "Acid House",
           "content": "The BPM of Acid House is commonly 120-150 BPM. Acid house (also simply known as just 'acid') is a subgenre of house music developed around the mid-1980s by DJs from Chicago. The style is defined primarily by the squelching sounds and basslines of the Roland TB-303 electronic bass synthesizer-sequencer, an innovation attributed to Chicago producers DJ Pierre of Phuture and Sleezy D. Acid house soon became popular in the United Kingdom and continental Europe, where it was played by DJs in the acid house and later rave scenes. By the late 1980s, acid house had moved into the British mainstream, where it had some influence on pop and dance styles.",
           "link": "https://en.wikipedia.org/wiki/Acid_house",
-          "bpm": "","audio": ""
+          "bpm": "",
+          "audio": ""
         },
-        { "name" : "Deep House", 
-      "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to the early recordings of Larry Heard (aka Mr. Fingers), including his influential track 'Can You Feel It'.",
-"link": "https://en.wikipedia.org/wiki/Deep_house"},
-        { "name" : "Big Room House" },
-        { "name" : "Bass House" },
-        { "name" : "Electro House" },
-         {
-           "name": "Future House",
-           "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ",
-           "link": "htps://en.wikipedia.org/wiki/Future_house",
-           "bpm": "126",
-           "audio": "futureHouse"
-         }
+        {
+          "name": "Deep House",
+          "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to the early recordings of Larry Heard (aka Mr. Fingers), including his influential track 'Can You Feel It'.",
+          "link": "https://en.wikipedia.org/wiki/Deep_house"
+        },
+        { "name": "Big Room House" },
+        { "name": "Bass House" },
+        { "name": "Electro House" },
+        {
+          "name": "Future House",
+          "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ",
+          "link": "htps://en.wikipedia.org/wiki/Future_house",
+          "bpm": "126",
+          "audio": "futureHouse"
+        }
       ]
     },
-      {
-      "name":"Dubstep",
-      "children" : [
-        { "name" : "Classic Dubstep" },
-        { "name" : "Wobblestep" },
-        { "name" : "Chillstep" },
-        { "name" : "Brostep" }
+    {
+      "name": "Dubstep",
+      "children": [
+        { "name": "Classic Dubstep" },
+        { "name": "Wobblestep" },
+        { "name": "Chillstep" },
+        { "name": "Brostep" }
       ]
     },
-     {
-      "name":"Trance",
-      "children" : [
+    {
+      "name": "Trance",
+      "children": [
         {
           "name": "Future Trance",
           "content": "",
@@ -65,7 +76,13 @@
           "bpm": "",
           "audio": ""
         },
-        { "name" : "Psytrance" , "content":"Psychedelic trance or psytrance for short is a music style. It emerged from the party scene in the hippie pilgrimage town of Goa (India) in the mid-90s. The first artists to create music in this style included Goa Gil, Eat Static, Hallucinogen, Astralasia, Juno Reactor, Zen Paradox, Koxbox, Spicelab and Transwave. The term goa-trance is still used for psychedelic trance.  At the same time the urge to innovate has led to many variations over the years.", "link" :"https://en.wikipedia.org/wiki/Psychedelic_trance" , "bpm" : "150" , "audio" : "psyTrance"},
+        {
+          "name": "Psytrance",
+          "content": "Psychedelic trance or psytrance for short is a music style. It emerged from the party scene in the hippie pilgrimage town of Goa (India) in the mid-90s. The first artists to create music in this style included Goa Gil, Eat Static, Hallucinogen, Astralasia, Juno Reactor, Zen Paradox, Koxbox, Spicelab and Transwave. The term goa-trance is still used for psychedelic trance.  At the same time the urge to innovate has led to many variations over the years.",
+          "link": "https://en.wikipedia.org/wiki/Psychedelic_trance",
+          "bpm": "150",
+          "audio": "psyTrance"
+        },
         {
           "name": "Euro Trance",
           "content": "",
@@ -75,18 +92,26 @@
         }
       ]
     },
-     {
-      "name":"Hardcore",
-      "children" : [
-        { "name" : "Hard Style", "children":[
-          { "name": "Dub Style"},
-          { "name": "Jump Style"}
-        ] },
-        { "name" : "Speedcopre","content" : "", "link": "https://en.wikipedia.org/wiki/Speedcore#:~:text=Speedcore%20is%20a%20form%20of,beats%20per%20minute%20(bpm).", "bpm": "" },
-        { "name" : "Gabber",
-      "content": "Originating from Hardcore, Hardcore Techno, New Beat, Acid House and Punk. Characterised by a super fast BPM, distorted kick drums and roared our shouted vocals reminiscent of punk. The BPM of Gabba is typically 180-190 BPM.",
-"link": "https://en.wikipedia.org/wiki/Gabber"},
-        { "name" : "Industrial Hardcore" }
+    {
+      "name": "Hardcore",
+      "children": [
+        {
+          "name": "Hard Style",
+          "children": [{ "name": "Dub Style" }, { "name": "Jump Style" }]
+        },
+        {
+          "name": "Speedcore",
+          "content": "Speedcore is a form of hardcore that is characterized by a high tempo and aggressive themes. It was originally created in the mid-1990s, and it's name originates from the genre hardcore, and refers to the high tempo found in this genre, which rarely drops below 300 beats per minute The Example falls under Industrial/Terror Speedcore",
+          "link": "https://en.wikipedia.org/wiki/Speedcore#:~:text=Speedcore%20is%20a%20form%20of,beats%20per%20minute%20(bpm).",
+          "bpm": "",
+          "audio": "speedcore"
+        },
+        {
+          "name": "Gabber",
+          "content": "Originating from Hardcore, Hardcore Techno, New Beat, Acid House and Punk. Characterised by a super fast BPM, distorted kick drums and roared our shouted vocals reminiscent of punk. The BPM of Gabba is typically 180-190 BPM.",
+          "link": "https://en.wikipedia.org/wiki/Gabber"
+        },
+        { "name": "Industrial Hardcore" }
       ]
     }
   ]

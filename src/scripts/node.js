@@ -12,7 +12,7 @@ class Node {
     this.name = name;
     this.children = [];
     this.childrenData = childrenData;
-    this.content = content || "there is no info for this subgenre";
+    this.content = this.getContent(content);
     this.parent = parent || "root";
     this.bubble = this.makeBubble();
     this.addListeners();
@@ -20,9 +20,15 @@ class Node {
     this.siblings = [];
     this.link = link;
     this.bpm = bpm;
-    this.audio = audio;
+    this.audio = audio || null;
   }
 
+    getContent(content){
+      if ((content === ""||'undefined')) return "there is no info for this subgenre";
+      else {
+        return content
+      }
+    }
   getSiblings() {
     if (this.parent === "root" || !this.siblings) return null;
     else {
@@ -89,7 +95,7 @@ class Node {
   }
 
   displayContent() {
-    
+    console.log(this.content);
     let content = document.getElementById("description");
     content.innerText = `${this.content}`;
     let link = document.getElementById("wikipedia");
@@ -104,7 +110,7 @@ class Node {
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");
     let content = document.getElementById("description");
-    content.remove();
+    content.innerText="";
   }
 
   contentVisible() {
@@ -197,3 +203,5 @@ function clearThePage() {
 }
 
 export { makeNodes };
+
+

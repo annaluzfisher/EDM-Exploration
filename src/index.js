@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  toggleOverviewVisibility();
-  startTheShow();
-  playAudio(house);
+  // toggleOverviewVisibility();
+  // startTheShow();
+  playAudio(house.path);
 });
 
 button.addEventListener("click", () => {
@@ -52,3 +52,4 @@ function setBpm(num) {
 
 
 // name  content link bpm audio 
+
