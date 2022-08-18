@@ -1,6 +1,116 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes show-less {
+  from {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.bubble-transitions {
+  margin: 0;
+  opacity: 0;
+  background-color: rgb(1, 1, 70);
+  height: 0rem;
+  width: 0rem;
+  z-index: -100;
+  transition: all 1s ease-in-out;
+}
+
+.visible-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 10px 2px rgb(81, 2, 184);
+  -moz-box-shadow: 0 0 10px 2px rgb(81, 2, 184);
+  box-shadow: 0 0 10px 2px rgb(81, 2, 184);
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  z-index: 100;
+  opacity: 1;
+  background-image: radial-gradient(rgb(11, 3, 105), rgb(0, 255, 89));
+  animation-name: show-less;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  padding: 4rem;
+  transition: all 1s ease-in-out;
+}
+
+.visible-bubble:hover {
+  position: relative;
+  background-image: radial-gradient(rgb(0, 255, 89), rgb(11, 3, 105));
+  transform: scale(1.4);
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  color: rgb(255, 140, 0);
+  z-index: 100;
+}
+
+#main-content .edm {
+  height: 14rem;
+  width: 14rem;
+}
+
+#main-content .edm span {
+  font-size: 9rem;
+}
+
+#tree .edm span {
+  font-size: 8rem;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.94);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(0.94);
+  }
+}
+.visible-bubble > span {
+  color: rgb(255, 228, 72);
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.visible-bubble:hover > span {
+  color: rgb(255, 140, 0);
+  font-size: 4rem;
+  z-index: 100;
+}
+
+#tree > div {
+  height: 6rem;
+  width: 6rem;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
 #the-page {
   opacity: 0.3;
   transition: opacity 3s ease-in;
@@ -97,6 +207,7 @@
 
 #content-box > div > p {
   font-family: "Blinker";
+  font-size: 1.3rem;
   padding: 1rem;
   color: rgb(116, 0, 107);
   z-index: 100;
@@ -158,199 +269,6 @@
   box-shadow: 0 0 8px 10px rgb(137, 248, 133);
   transform: translateY(30px);
   color: rgb(17, 8, 119);
-}
-
-body {
-  font-family: "Bungee Outline";
-  font-weight: 600;
-}
-
-#background {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: rgb(10, 0, 29);
-  z-index: -80;
-}
-
-.hidden {
-  z-index: -100;
-  opacity: 100;
-  animation-name: pop-away;
-  animation-duration: 1.4s;
-  visibility: hidden;
-}
-
-@keyframes pop-away {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-.hidden > div > #button {
-  font-size: 0;
-  padding: 0;
-  transform: scale(0.1);
-  visibility: hidden;
-}
-
-#wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
-
-#main-content {
-  box-sizing: border-box;
-  padding: 5rem;
-  height: 100vh;
-  width: 65vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#tree {
-  height: 100vh;
-  width: 15vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: unset;
-}
-
-.hidden-space {
-  width: 10%;
-  animation-name: show-less;
-}
-
-#instructions {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-}
-
-#instructions > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#instructions > p {
-  transform: translatex(2rem);
-  font-size: 1.6rem;
-  color: rgb(65, 1, 156);
-}
-
-@keyframes show {
-  from {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes show-less {
-  from {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.bubble-transitions {
-  margin: 0;
-  opacity: 0;
-  background-color: rgb(1, 1, 70);
-  height: 0rem;
-  width: 0rem;
-  z-index: -100;
-  transition: all 1s ease-in-out;
-}
-
-.visible-bubble {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 0 10px 2px rgb(81, 2, 184);
-  -moz-box-shadow: 0 0 10px 2px rgb(81, 2, 184);
-  box-shadow: 0 0 10px 2px rgb(81, 2, 184);
-  position: relative;
-  height: 10rem;
-  width: 10rem;
-  z-index: 100;
-  opacity: 1;
-  background-image: radial-gradient(rgb(11, 3, 105), rgb(0, 255, 89));
-  animation-name: show-less;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  padding: 4rem;
-  transition: all 1s ease-in-out;
-}
-
-.visible-bubble:hover {
-  position: relative;
-  background-image: radial-gradient(rgb(0, 255, 89), rgb(11, 3, 105));
-  transform: scale(1.4);
-  animation-name: pulse;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  color: rgb(255, 140, 0);
-  z-index: 100;
-}
-
-#main-content .edm {
-  height: 14rem;
-  width: 14rem;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(0.94);
-  }
-  50% {
-    transform: scale(1.06);
-  }
-  to {
-    transform: scale(0.94);
-  }
-}
-.visible-bubble > span {
-  color: rgb(255, 228, 72);
-  font-size: 2rem;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.visible-bubble:hover > span {
-  color: rgb(255, 140, 0);
-  font-size: 4rem;
-  z-index: 100;
-}
-
-#tree > div {
-  height: 6rem;
-  width: 6rem;
-  animation-name: show;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
 }
 
 #music-player {
@@ -504,4 +422,95 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .icon:hover {
   transform: scale(1.2);
+}
+
+body {
+  font-family: "Bungee Outline";
+  font-weight: 600;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(10, 0, 29);
+  z-index: -80;
+}
+
+.hidden {
+  z-index: -100;
+  opacity: 100;
+  animation-name: pop-away;
+  animation-duration: 1.4s;
+  visibility: hidden;
+}
+
+@keyframes pop-away {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.hidden > div > #button {
+  font-size: 0;
+  padding: 0;
+  transform: scale(0.1);
+  visibility: hidden;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#main-content {
+  box-sizing: border-box;
+  padding: 5rem;
+  height: 100vh;
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tree {
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: unset;
+}
+
+.hidden-space {
+  width: 10%;
+  animation-name: show-less;
+}
+
+#instructions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#instructions > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#instructions > p {
+  transform: translatex(2rem);
+  font-size: 1.6rem;
+  color: rgb(65, 1, 156);
 }

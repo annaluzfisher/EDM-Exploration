@@ -1,5 +1,8 @@
-@import "./css/modals.scss";
 
+@import "./css/bubbles.scss";
+@import "./css/modals.scss";
+@import "./css/audio.scss";
+@import "./css/nav-bar.scss";
 body {
   font-family: "Bungee Outline";
   font-weight: 600;
@@ -90,6 +93,5 @@ body {
   color: rgb(65, 1, 156);
 }
 
-@import "./css/bubbles.scss";
-@import "./css/audio.scss";
-@import "./css/nav-bar.scss";
+
+

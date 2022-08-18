@@ -71,7 +71,6 @@
   -moz-box-shadow: 0 0 7px 2px rgb(17, 17, 17);
   box-shadow: 0 0 7px 2px rgb(17, 17, 17);
   z-index: 100;
-  // animation-name: show;
   transition: all 1.4s ease-in-out;
 }
 #content-box > div {
@@ -92,6 +91,7 @@
 }
 #content-box > div > p {
   font-family: 'Blinker';
+  font-size: 1.3rem;
   padding: 1rem;
   color: rgb(116, 0, 107);
   z-index: 100;
@@ -124,8 +124,9 @@
 transform: scale(1.2);
 opacity:.8;
 text-shadow: 4,4,gray;
-
 }
+
+
 #button {
   background-color: rgb(17, 8, 119);
   border-radius: 1rem;
