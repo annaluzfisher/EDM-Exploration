@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   playAudio(darude.path);
 });
 
-
 button.addEventListener("click", () => {
   toggleOverviewVisibility();
   setTimeout(startTheShow, 3000);

@@ -47,18 +47,18 @@ body {
 #wrapper {
   display: flex;
   flex-direction: row;
+  justify-content:right;
 }
 
 #main-content {
   box-sizing: border-box;
   padding: 5rem;
   height: 100vh;
-  width: 80vw;
+  width: 65vw;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   flex-wrap: wrap;
-  border: 3px solid salmon;
 }
 
 #tree {
@@ -72,7 +72,7 @@ body {
 }
 
 .hidden-space{
-  width: 1rem;
+  width: 10%;
   animation-name: show-less;
 }
 
