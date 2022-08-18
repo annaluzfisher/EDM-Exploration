@@ -96,7 +96,6 @@ const AUDIOTRACKS = [
   chillwave
 ];
 
-//https://www.youtube.com/watch?v=xvFZjo5PgG0
 const resultMessage = document.getElementById("result");
 
 function playAudio(pathVariable) {
@@ -113,6 +112,7 @@ function playAudio(pathVariable) {
   const source = audioContext.createMediaElementSource(audio);
   source.connect(analyser);
   analyser.connect(audioContext.destination);
+  changeScrollerText(pathVariable);
 }
 
 function changeTrack(e) {
@@ -135,6 +135,11 @@ function changeTrack(e) {
 function swapIt(path) {
   document.getElementById("player").innerHTML = "";
   playAudio(path);
+}
+
+function changeScrollerText(path){
+ let song =  path.slice(6)
+document.getElementById('song-title').innerText=`${song}`
 }
 
 const waveform = document.getElementById("waveform");

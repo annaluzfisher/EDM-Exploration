@@ -44,10 +44,3 @@ function setBpm(num) {
   let newSpeed = (60 / num).toFixed(2);
   bpmDiv.style["animation-duration"] = newSpeed + "s";
 }
-
-// consider a rails api. free static server. drag and drop into public folder
-// heroku create git push
-
-
-// name  content link bpm audio 
-
