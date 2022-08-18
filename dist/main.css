@@ -292,7 +292,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: rgb(0, 247, 12);
   text-shadow: 2px 2px rgb(1, 136, 3);
   padding: 0.7rem;
@@ -471,7 +471,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 80%;
 }
 
 #instructions > div {
@@ -479,4 +480,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+#instructions > p {
+  transform: translatex(2rem);
+  font-size: 1.6rem;
 }
