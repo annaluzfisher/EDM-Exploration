@@ -68,7 +68,8 @@
     {
       "name": "Dubstep",
       "children": [
-        { "name": "Classic Dubstep" },
+        { "name": "Classic Dubstep" , "content" : "Dubstep has it's origins in the UK as an child of the genre UK Garage. Good tracks are often refered to as 'grimey' or 'filthy' - the filthier the better! Feature is a not so grimey classic for nice listening. Flux Pavilion's 'I Can't Stop' is the soundtrack of a genration.(140 BPM)",
+      "link": "https://en.wikipedia.org/wiki/Dubstep", "bpm" : "140", "audio":"classicDubstep"},
         { "name": "Wobblestep",
       "content": "Wobble Wobble! One characteristic of certain strands of dubstep is the wobble bass, often referred to as the 'wub', where an extended bass note is manipulated rhythmically. This style of bass is typically produced by using a low-frequency oscillator to manipulate certain parameters of a synthesiser such as volume, distortion or filter cutoff. Playing is 'Where's my Money' by Caspa with a tempo of 140 BPM. It can also be used half-time at 70 BPM or double-time at 280 BPM.",
     "link": "https://en.wikipedia.org/wiki/Dubstep",
@@ -116,7 +117,10 @@
       "children": [
         {
           "name": "Hard Style",
-          "children": [{ "name": "Dub Style" }, 
+          "children": [{ "name": "Dub Style", "content" : "Dub Style is a fusion between hardstyle and dubstep where heavy bass kicks and dubstep-ish beats are usually present. It's still developing into a solid sub-genre. Audio is 'Nightmare' by Obsidia. BPM... unknown. Try the BPM slider and see if you can figure it out!",
+        "link": "https://fi.wikipedia.org/wiki/Dubstyle",
+      "bpm":"",
+    "audio":""}, 
           { "name": "Jump Style",
           "content" : "Light, bouncy and FAST, this genre has roots in the netherlands. Track available hit number one in holland in 2007 and was the first instrumental to hit #1 since 1995. 'Freefall by Jeckyll & Hyde'. (140 BPM)",
           "link": "https://en.wikipedia.org/wiki/Jumpstyle",
@@ -126,7 +130,7 @@
         {
           "name": "Speedcore",
           "content": "Speedcore is a form of hardcore that is characterized by a high tempo and aggressive themes. It was originally created in the mid-1990s, and it's name originates from the genre hardcore, and refers to the high tempo found in this genre, which rarely drops below 300 beats per minute The Example falls under Industrial/Terror Speedcore",
-          "link": "https://en.wikipedia.org/wiki/Speedcore#:~:text=Speedcore%20is%20a%20form%20of,beats%20per%20minute%20(bpm).",
+          "link": "https://www.youtube.com/watch?v=xvFZjo5PgG0",
           "bpm": "",
           "audio": "speedcore"
         },

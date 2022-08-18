@@ -58,6 +58,14 @@ const jumpStyle = {
   genre: "jumpStyle",
   path: "music/Jeckyll & Hyde - Freefall (Official Video HQ).mp3",
 };
+const classicDubstep = {
+  genre: "classicDubstep",
+  path: "music/Flux Pavilion - I Can't Stop.mp3",
+};
+const dubStyle = {
+  genre: "dubStyle",
+  path: "music/Obsidia - Nightmare (Dubstyle).mp3",
+};
 const AUDIOTRACKS = [
   house,
   detroitTechno,
@@ -72,9 +80,12 @@ const AUDIOTRACKS = [
   gabber,
   jumpStyle,
   deepHouse,
-  electroHouse
+  electroHouse,
+  classicDubstep,
+  dubStyle
 ];
 
+//https://www.youtube.com/watch?v=xvFZjo5PgG0
 const resultMessage = document.getElementById("result");
 
 function playAudio(pathVariable) {
