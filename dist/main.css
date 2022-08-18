@@ -183,6 +183,7 @@ input[type=range]::-webkit-slider-runnable-track {
   justify-content: space-between;
   height: 40%;
   width: 100%;
+  padding-top: 30%;
 }
 
 #bpm-wrapper {
@@ -191,17 +192,19 @@ input[type=range]::-webkit-slider-runnable-track {
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  margin-top: 1rem;
+  margin-top: 4%;
+  margin-left: 2%;
   width: 15rem;
   min-width: 10rem;
   height: 25rem;
   min-height: 15rem;
+  border: 2px solid yellow;
 }
 
 #bpm {
   position: relative;
-  height: 8rem;
-  width: 8rem;
+  height: 100%;
+  width: 100%;
   border-radius: 100%;
   background-image: radial-gradient(rgb(142, 0, 114), rgb(255, 0, 60));
   -webkit-box-shadow: 0 0 10px 2px rgb(100, 255, 141);
@@ -450,8 +453,9 @@ body {
   width: 80vw;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: right;
   flex-wrap: wrap;
+  border: 3px solid salmon;
 }
 
 #tree {

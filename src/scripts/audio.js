@@ -1,8 +1,14 @@
-const house = {genre:'house', path: "./music/house.mp3"};
+const house = { genre: "house", path: "./music/house.mp3" };
 
-const detroitTechno = {genre: "detroitTechno",path : "./music/The Belleville Three - live  Tomorrowland 2017 (Belgium)  22.07.2017.mp3"};
+const detroitTechno = {
+  genre: "detroitTechno",
+  path: "./music/The Belleville Three - live  Tomorrowland 2017 (Belgium)  22.07.2017.mp3",
+};
 
-const futureHouse = {genre:'futureHouse',path:"music/Thomas Hayden - Universe.mp3"};
+const futureHouse = {
+  genre: "futureHouse",
+  path: "music/Thomas Hayden - Universe.mp3",
+};
 
 const speedcore = {
   genre: "speedcore",
@@ -14,15 +20,46 @@ const minimalTechno = {
 };
 const psyTrance = {
   genre: "psyTrance",
-  path: "music/Y2Mate.is - Becoming Insane-BB1RrGJiOnU-160k-1660146558516.mp3"
+  path: "music/Y2Mate.is - Becoming Insane-BB1RrGJiOnU-160k-1660146558516.mp3",
 };
 const wobbleStep = {
   genre: "wobbleStep",
   path: "music/TC - Where's My Money (Caspa Remix).mp3",
 };
-const AUDIOTRACKS = [house, detroitTechno, futureHouse,psyTrance,speedcore,minimalTechno];
+const freeform = {
+  genre: "freeform",
+  path: "music/space jesus_ hmu trippy hula hoop (1).mp3",
+};
+const darude = {
+  genre: "default",
+  path: "music/Darude - Sandstorm.mp3",
+};
+const brostep = {
+  genre: "brostep",
+  path: "music/Skrillex - Scary Monsters And Nice Sprites (Official Audio).mp3",
+};
+const techHouse = {
+  genre: "techHouse",
+  path: "music/Fisher - Stop It.mp3",
+};
+const electroHouse = {
+  genre: "electroHouse",
+  path: "music/Caravan Palace - Lone Digger.mp3",
+};
+const AUDIOTRACKS = [
+  house,
+  detroitTechno,
+  futureHouse,
+  psyTrance,
+  speedcore,
+  minimalTechno,
+  freeform,
+  wobbleStep,
+  brostep,
+  techHouse,
+];
 //testing work around
-const resultMessage = document.getElementById('result');
+const resultMessage = document.getElementById("result");
 
 function playAudio(pathVariable) {
   let audio = new Audio();
@@ -30,6 +67,7 @@ function playAudio(pathVariable) {
   audio.src = pathVariable;
   audio.crossOrigin = "anonymous";
   audio.loop = "true";
+  audio.autoplay = "true";
   audio.controls = "true";
   document.getElementById("player").appendChild(audio);
   const audioContext = new AudioContext();
@@ -39,21 +77,16 @@ function playAudio(pathVariable) {
   analyser.connect(audioContext.destination);
 }
 
-
-
-
-
-
 function changeTrack(e) {
   for (let i = 0; i < AUDIOTRACKS.length; i++) {
-   let audio = e.target.dataset.audio;
-    let genre = AUDIOTRACKS[i].genre
-    console.log('audio',audio,'genre',genre)
+    let audio = e.target.dataset.audio;
+    let genre = AUDIOTRACKS[i].genre;
+    console.log("audio", audio, "genre", genre);
     if (audio === genre) {
       swapIt(AUDIOTRACKS[i].path);
       break;
     } else {
-     resultMessage.innerText="No Audio Available...yet!";
+      resultMessage.innerText = "No Audio Available...yet!";
       resultMessage.classList.remove("hidden");
       setTimeout(() => resultMessage.classList.add("hidden"), 4000);
     }
@@ -61,16 +94,12 @@ function changeTrack(e) {
 }
 
 function swapIt(path) {
-  console.log(path);
-  document.getElementById("player").innerHTML="";
+  document.getElementById("player").innerHTML = "";
   playAudio(path);
-   resultMessage.innerText = "Click Play on the Player";
-   resultMessage.classList.remove('hidden');
-   setTimeout(() => resultMessage.classList.add("hidden"),4000);
 }
-
 
 const waveform = document.getElementById("waveform");
 waveform.addEventListener("click", (e) => changeTrack(e));
 
-export { playAudio, house };
+export { playAudio, darude };
+

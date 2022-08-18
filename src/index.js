@@ -10,18 +10,19 @@ import {
 
 require("./scripts/background");
 require("./scripts/audio");
-import { playAudio, house } from "./scripts/audio";
+import { playAudio, darude } from "./scripts/audio";
 
 document.addEventListener("DOMContentLoaded", async () => {
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  playAudio(house.path);
+  playAudio(darude.path);
 });
+
 
 button.addEventListener("click", () => {
   toggleOverviewVisibility();
-  setTimeout(startTheShow, 4000);
+  setTimeout(startTheShow, 3000);
 });
 
 const fetchA = async function () {

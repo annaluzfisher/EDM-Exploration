@@ -1,6 +1,8 @@
 {
   "name": "EDM",
-  "children": [
+  "children": [ {
+    "name": "Freeform", "content" : "Freeform, often called Freeform Bass, is a sort of all encompasing genre for music that doesnt quite fit into one category. There is Freeform Hardcore, Freeform Techno, Freeform Dubstep etc. The example audio is one of my favorites : 'Hmu' by Space Jesus (feat. Clay Parnell & Rory 'Sweet Boy' Dolan).", "link":"https://en.wikipedia.org/wiki/List_of_electronic_music_genres","bpm" :"", "audio": "freeform"
+  },
     {
       "name": "Techno",
       "children": [
@@ -22,6 +24,13 @@
           "link": "https://en.wikipedia.org/wiki/Detroit_techno",
           "bpm": "",
           "audio": "detroitTechno"
+        },
+        {
+          "name" : "Tech House",
+          "content" : "As the name sounds, this genre is a fusion of techno and house music. While House music has a tempo between 118 and 135 beats per minute (bpm), Techno music has a tempo ranging from 130 to 150 bpm. Track playing is another favorite of mine: 'Stop It' by Fisher. (124 BPM)",
+          "link" :"https://en.wikipedia.org/wiki/Tech_house",
+          "bpm": "124",
+          "audio": "techHouse"
         }
       ]
     },
@@ -40,9 +49,11 @@
           "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to the early recordings of Larry Heard (aka Mr. Fingers), including his influential track 'Can You Feel It'.",
           "link": "https://en.wikipedia.org/wiki/Deep_house"
         },
-        { "name": "Big Room House" },
-        { "name": "Bass House" },
-        { "name": "Electro House" },
+        { "name": "Electro House",
+      "content" : "Also known as electro swing, this is such a FUN genre to dance to. Combining either jazzy, funky or hip-hop vocals, it is modern and vintage at the same time. The example available is  'Lone Digger' by Caravan Palace. This music video is great! (BPM)",
+    "link": "https://en.wikipedia.org/wiki/Electro_swing#:~:text=Electro%20swing%2C%20or%20swing%20house,with%20house%20and%20hip%20hop.",
+  "bpm":"",
+"audio" :"electroHouse"},
         {
           "name": "Future House",
           "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM. ",
@@ -62,7 +73,7 @@
   "bpm":"",
 "audio": "wobbleStep"},
         { "name": "Chillstep" },
-        { "name": "Brostep" }
+        { "name": "Brostep" ,"content": "Ah! this is the subgenre that you think of when you think of dubstep, with Skrillex being the most well known name in the genre. It's characterized by being essentially more hardcore than it's UK counterparts, with heavily distorted bass synths, and lots of wubs. It accentuates the middle negative & uses robotic fluctuations & metal-esque aggression. Song playing is 'Scary Monsters and Nice Sprites' by Skrillex. like it? Check out Excision and Datsik.","link" : "https://en.wikipedia.org/wiki/Dubstep#Brostep_and_American_developments", "bpm" : "", "audio" : "brostep"}
       ]
     },
     {
