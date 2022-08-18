@@ -11,8 +11,10 @@
         },
         {
           "name": "Minimal Techno",
-          "content": " Minimal Techno is not mellow, but it's easier to digest than some of its sibling genres. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell. By the early 2000s the term 'minimal' generally described a style of techno that was popularized in Germany by labels such as Kompakt, Perlon, and Richie Hawtin's M-nus, among others.",
-          "link": "https://en.wikipedia.org/wiki/Minimal_techno"
+          "content": " Minimal Techno is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell. By the early 2000s the term 'minimal' generally described a style of techno that was popularized in Germany by labels such as Kompakt, Perlon, and Richie Hawtin's M-nus, among others. The audio is Richie Hawtin's 'Consumed. (119 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Minimal_techno",
+          "bpm" : "119",
+          "audio": "minimalTechno"
         },
         {
           "name": "Detroit Techno",

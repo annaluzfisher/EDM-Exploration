@@ -1,14 +1,8 @@
 //file for logic on how the nodes opperates
 //node keeps track of it's DOM properties
-import {
-  mainContent,
-  contentBox,
-  tree,
-  bubbles,
-  hiddenSpace,
-} from "./util";
+import { mainContent, contentBox, tree, bubbles, hiddenSpace } from "./util";
 class Node {
-  constructor(name, childrenData, content, link, bpm,audio,parent) {
+  constructor(name, childrenData, content, link, bpm, audio, parent) {
     this.name = name;
     this.children = [];
     this.childrenData = childrenData;
@@ -23,12 +17,13 @@ class Node {
     this.audio = audio || null;
   }
 
-    getContent(content){
-      if ((content === ""||'undefined')) return "there is no info for this subgenre";
-      else {
-        return content
-      }
+  getContent(content) {
+    if (content === "" || "undefined")
+      return "there is no info for this subgenre";
+    else {
+      return content;
     }
+  }
   getSiblings() {
     if (this.parent === "root" || !this.siblings) return null;
     else {
@@ -41,9 +36,9 @@ class Node {
   }
 
   toggleBubbleVisibility() {
-    if (this.displayed()) this.moveToHiddenSpace();
+    if (this.displayed()) this.moveTo(hiddenSpace);
     else {
-      this.moveToMain();
+      this.moveTo(mainContent);
     }
     this.bubble.classList.toggle("visible-bubble");
     return this.displayed();
@@ -56,10 +51,10 @@ class Node {
   in(space) {
     return this.bubble.parentNode === space;
   }
-
-  hasChildren() {
-    if (this.children.length > 0) return true;
-    return false;
+  moveTo(location) {
+    this.bubble.parentNode.removeChild(this.bubble);
+    location.appendChild(this.bubble);
+    this.location = location;
   }
 
   makeBubble() {
@@ -76,31 +71,13 @@ class Node {
     return bubble;
   }
 
-  moveToMain() {
-    this.bubble.parentNode.removeChild(this.bubble);
-    mainContent.appendChild(this.bubble);
-    this.location = mainContent;
-  }
-
-  moveToTree() {
-    this.bubble.parentNode.removeChild(this.bubble);
-    tree.appendChild(this.bubble);
-    this.location = tree;
-  }
-
-  moveToHiddenSpace() {
-    this.bubble.parentNode.removeChild(this.bubble);
-    hiddenSpace.appendChild(this.bubble);
-    this.location = hiddenSpace;
-  }
-
   displayContent() {
     console.log(this.content);
     let content = document.getElementById("description");
     content.innerText = `${this.content}`;
     let link = document.getElementById("wikipedia");
     link.setAttribute("href", `${this.link}`);
-    let waveform = document.getElementById('waveform');
+    let waveform = document.getElementById("waveform");
     waveform.dataset.audio = `${this.audio}`;
     let title = document.getElementById("title");
     title.innerText = `${this.name}`;
@@ -110,7 +87,7 @@ class Node {
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");
     let content = document.getElementById("description");
-    content.innerText="";
+    content.innerText = "";
   }
 
   contentVisible() {
@@ -130,7 +107,7 @@ function makeNodes(data) {
     data["children"],
     data["content"],
     data["link"],
-    data['bpm'],
+    data["bpm"],
     data["audio"]
   );
   bubbles.push(node);
@@ -148,39 +125,31 @@ function makeChildren(childrenData, parent) {
   });
 }
 
-function toggleChildren(children) {
-  if (children === null) return null;
+function toggleBubbles(bubbles) {
+  if (bubbles === null) return null;
   else {
-    children.forEach((child) => {
-      child.toggleBubbleVisibility();
+    bubbles.forEach((bubble) => {
+      bubble.toggleBubbleVisibility();
     });
   }
 }
 
-function toggleSiblings(siblings) {
-  if (siblings == null) return null;
-  else {
-    siblings.forEach((sibling) => {
-      sibling.toggleBubbleVisibility();
-    });
-  }
-}
 function handleBubbleClick(node) {
   if (node.in(mainContent)) {
-    node.moveToTree();
+    node.moveTo(tree);
     node.getSiblings();
     if (node.siblings !== null) {
-      toggleSiblings(node.siblings);
+      toggleBubbles(node.siblings);
     }
     if (node.children.length > 0) {
-      toggleChildren(node.children);
+      toggleBubbles(node.children);
     } else {
       node.displayContent();
     }
   } else if (node.in(tree)) {
     clearTreeBelow(node);
     clearThePage();
-    toggleSiblings(node.siblings);
+    toggleBubbles(node.siblings);
     node.toggleBubbleVisibility();
 
     if (node.contentVisible()) node.toggleContentVisibility();
@@ -188,7 +157,7 @@ function handleBubbleClick(node) {
 }
 
 function clearTreeBelow(node) {
-  node.moveToMain();
+  node.moveTo(mainContent);
   node.toggleBubbleVisibility();
   node.children.forEach((child) => {
     if (child.in(tree)) clearTreeBelow(child);
@@ -203,5 +172,3 @@ function clearThePage() {
 }
 
 export { makeNodes };
-
-

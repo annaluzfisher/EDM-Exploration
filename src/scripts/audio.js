@@ -11,6 +11,7 @@ const speedcore = {
   genre: "speedcore",
   path: "music/01_SPaCeyALieN_Fuck_Your_Faketone_Intro.mp3",
 };
+const minimalTechno = {genre: 'minimalTechno', path: ""}
 const AUDIOTRACKS = [house, detroitTechno, futureHouse,psyTrance,speedcore];
 //testing work around
 const resultMessage = document.getElementById('result');
