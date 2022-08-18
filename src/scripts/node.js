@@ -3,7 +3,6 @@
 import {
   mainContent,
   contentBox,
-  innerContentBox,
   tree,
   bubbles,
   hiddenSpace,
@@ -22,7 +21,6 @@ class Node {
     this.link = link;
     this.bpm = bpm;
     this.audio = audio;
-      console.log(audio);
   }
 
   getSiblings() {
@@ -117,12 +115,6 @@ class Node {
     this.bubble.addEventListener("click", () => {
       handleBubbleClick(this);
     });
-    // this.bubble.addEventListener("mouseover", () => {
-    //     handleBubbleMouseOver(this);
-    // });
-    // this.bubble.addEventListener("mouseout", () => {
-    //     handleBubbleMouseOut(this);
-    // });
   }
 }
 
@@ -135,7 +127,6 @@ function makeNodes(data) {
     data['bpm'],
     data["audio"]
   );
-  console.log(node.name,node);
   bubbles.push(node);
   if (data["children"]) {
     makeChildren(data["children"], node);
@@ -180,7 +171,6 @@ function handleBubbleClick(node) {
     } else {
       node.displayContent();
     }
-    //swapCurrentTrack();
   } else if (node.in(tree)) {
     clearTreeBelow(node);
     clearThePage();
@@ -201,7 +191,6 @@ function clearTreeBelow(node) {
 
 function clearThePage() {
   bubbles.forEach((bubble) => {
-    console.log(bubble.name, bubble.displayed());
     if (bubble.displayed() && bubble.in(mainContent))
       bubble.toggleBubbleVisibility();
   });

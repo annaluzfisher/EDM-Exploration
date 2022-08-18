@@ -12,7 +12,9 @@ const innerContentBox = document.getElementById("inner-content-box");
 const contentBox = document.getElementById("content-box");
 const hiddenSpace = document.getElementById("hidden-space");
 const bpmBar = document.getElementById('bpm-bar');
-// const intro = require('../../data/overview.txt')
+const bpmDiv = document.getElementById('bpm');
+ const root = document.querySelector(":root");
+
 let bubbles = [];
 
 const startPage = function () {
@@ -30,9 +32,12 @@ function startTheShow() {
   root.toggleBubbleVisibility();
 }
 
-function updateBpm(){
-  
-}
+
+// function updateBpm (){
+//    let num = document.getElementById("bpm-number");
+//    num.innerHTML = bpmBar.value;
+// }
+
 export {
   hiddenSpace,
   startTheShow,
@@ -48,5 +53,8 @@ export {
   dots,
   startPage,
   toggleOverviewVisibility,
-  bpmBar
+  bpmBar,
+  bpmDiv,
+  root,
+
 };

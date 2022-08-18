@@ -4,27 +4,26 @@ import {
   button,
   toggleOverviewVisibility,
   startTheShow,
-  bpmBar
+  bpmBar,
+  bpmDiv,
 } from "./scripts/util";
 
-require('./scripts/background');
-require('./scripts/audio');
-import { playAudio , house} from './scripts/audio';
+require("./scripts/background");
+require("./scripts/audio");
+import { playAudio, house } from "./scripts/audio";
 
 document.addEventListener("DOMContentLoaded", async () => {
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  toggleOverviewVisibility()
+  toggleOverviewVisibility();
   startTheShow();
-  playAudio(house.path);
-  // createAudioSource(AUDIOTRACKS[0]);
+  playAudio(house);
 });
-
 
 button.addEventListener("click", () => {
   toggleOverviewVisibility();
-  setTimeout(startTheShow,4000);
+  setTimeout(startTheShow, 4000);
 });
 
 const fetchA = async function () {
@@ -33,15 +32,23 @@ const fetchA = async function () {
   return data;
 };
 
-window.addEventListener('click', (e) => {
+window.addEventListener("click", (e) => {
   console.log(e.target);
-})
+});
 
-bpmBar.addEventListener('input', function (){
- let num =  document.getElementById("bpm-number");
- num.innerHTML = bpmBar.value;
- })
-// document.addEventListener('keydown',changeTrack);
+bpmBar.addEventListener("input", function () {
+  let num = document.getElementById("bpm-number");
+  num.innerHTML = bpmBar.value;
+  setBpm(bpmBar.value);
+});
+
+function setBpm(num) {
+  let newSpeed = (60 / num).toFixed(2);
+  bpmDiv.style["animation-duration"] = newSpeed + "s";
+}
 
 // consider a rails api. free static server. drag and drop into public folder
 // heroku create git push
+
+
+// name  content link bpm audio 

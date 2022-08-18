@@ -18,7 +18,7 @@ const resultMessage = document.getElementById('result');
 function playAudio(pathVariable) {
   let audio = new Audio();
   audio.crossOrigin = "anonymous";
-  audio.src = pathVariable;
+  audio.src = pathVariable.path;
   audio.crossOrigin = "anonymous";
   audio.loop = "true";
   audio.controls = "true";
@@ -57,10 +57,5 @@ function swapIt(path) {
 
 const waveform = document.getElementById("waveform");
 waveform.addEventListener("click", (e) => changeTrack(e));
-// function changeTrack(track) {
-//   audioElement.setAttribute("src", `${detroitTechno}`);
-//   audioContext.resume();
-//   audioElement.play();
-//   console.log("were in the function ");
-// }
+
 export { playAudio, house };
