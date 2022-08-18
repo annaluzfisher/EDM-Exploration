@@ -16,6 +16,10 @@ const psyTrance = {
   genre: "psyTrance",
   path: "music/Y2Mate.is - Becoming Insane-BB1RrGJiOnU-160k-1660146558516.mp3"
 };
+const wobbleStep = {
+  genre: "wobbleStep",
+  path: "music/TC - Where's My Money (Caspa Remix).mp3",
+};
 const AUDIOTRACKS = [house, detroitTechno, futureHouse,psyTrance,speedcore,minimalTechno];
 //testing work around
 const resultMessage = document.getElementById('result');

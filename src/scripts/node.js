@@ -83,6 +83,7 @@ class Node {
     title.innerText = `${this.name}`;
     contentBox.classList.toggle("hidden");
   }
+  
 
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");

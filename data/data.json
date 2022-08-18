@@ -56,7 +56,11 @@
       "name": "Dubstep",
       "children": [
         { "name": "Classic Dubstep" },
-        { "name": "Wobblestep" },
+        { "name": "Wobblestep",
+      "content": "Wobble Wobble! One characteristic of certain strands of dubstep is the wobble bass, often referred to as the 'wub', where an extended bass note is manipulated rhythmically. This style of bass is typically produced by using a low-frequency oscillator to manipulate certain parameters of a synthesiser such as volume, distortion or filter cutoff. Playing is 'Where's my Money' by Caspa with a tempo of 140 BPM. It can also be used half-time at 70 BPM or double-time at 280 BPM.",
+    "link": "https://en.wikipedia.org/wiki/Dubstep",
+  "bpm":"",
+"audio": "wobbleStep"},
         { "name": "Chillstep" },
         { "name": "Brostep" }
       ]
