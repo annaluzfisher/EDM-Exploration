@@ -66,6 +66,15 @@ const dubStyle = {
   genre: "dubStyle",
   path: "music/Obsidia - Nightmare (Dubstyle).mp3",
 };
+const tripHop = {
+  genre: "tripHop",
+  path: "music/Thievery Corporation - Lebanese Blonde.mp3",
+};
+const chillwave = {
+  genre: "chillwave",
+  path: "music/Neon Indian - Annie (Official Audio).mp3",
+};
+
 const AUDIOTRACKS = [
   house,
   detroitTechno,
@@ -82,7 +91,9 @@ const AUDIOTRACKS = [
   deepHouse,
   electroHouse,
   classicDubstep,
-  dubStyle
+  dubStyle,
+  tripHop,
+  chillwave
 ];
 
 //https://www.youtube.com/watch?v=xvFZjo5PgG0

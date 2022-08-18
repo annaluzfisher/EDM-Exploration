@@ -1,8 +1,30 @@
 {
   "name": "EDM",
-  "children": [ {
-    "name": "Freeform", "content" : "Freeform, often called Freeform Bass, is a sort of all encompasing genre for music that doesnt quite fit into one category. There is Freeform Hardcore, Freeform Techno, Freeform Dubstep etc. The example audio is one of my favorites : 'Hmu' by Space Jesus (feat. Clay Parnell & Rory 'Sweet Boy' Dolan).", "link":"https://en.wikipedia.org/wiki/List_of_electronic_music_genres","bpm" :"", "audio": "freeform"
-  },
+  "children": [
+    {
+      "name": "Freeform",
+      "content": "Freeform, often called Freeform Bass, is a sort of all encompasing genre for music that doesnt quite fit into one category. There is Freeform Hardcore, Freeform Techno, Freeform Dubstep etc. The example audio is one of my favorites : 'Hmu' by Space Jesus (feat. Clay Parnell & Rory 'Sweet Boy' Dolan).",
+      "link": "https://en.wikipedia.org/wiki/List_of_electronic_music_genres",
+      "bpm": "",
+      "audio": "freeform"
+    },
+    {
+      "name": "Downtempo",
+      "children": [
+        {
+          "name": "Trip Hop",
+          "content": "Trip-hop is an experimental musical genre that blends elements of hip-hop, Jamaican reggae, acid jazz, and electronic music to create a unique sound. It features psychedelic, downtempo elements and emphasizes bass-heavy drumbeats. I grew up with this 1999 song: Lebanese Blonde by Thievery Corporation.(92 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Trip_hop",
+          "bpm": "92",
+          "audio": "tripHop"
+        },
+        { "name": "Chillwave",
+      "content" : "Chillwave is a music microgenre that emerged in the late 2000s. It loosely emulates 1980s electropop while engaging with notions of memory and nostalgia. Common features include a faded or dreamy retro pop sound, escapist lyrics, psychedelic or lo-fi aesthetics, mellow vocals, and slow-to-moderate tempos. Song example is another one that takes me back to high school: 'Annie' by Neon Indian. (96 BPM)",
+    "link": "https://en.wikipedia.org/wiki/Chillwave",
+  "bpm": "96",
+"audio":"chillwave"}
+      ]
+    },
     {
       "name": "Techno",
       "children": [
@@ -15,7 +37,7 @@
           "name": "Minimal Techno",
           "content": " Minimal Techno is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell. By the early 2000s the term 'minimal' generally described a style of techno that was popularized in Germany by labels such as Kompakt, Perlon, and Richie Hawtin's M-nus, among others. The audio is Richie Hawtin's 'Consumed. (119 BPM)",
           "link": "https://en.wikipedia.org/wiki/Minimal_techno",
-          "bpm" : "119",
+          "bpm": "119",
           "audio": "minimalTechno"
         },
         {
@@ -26,9 +48,9 @@
           "audio": "detroitTechno"
         },
         {
-          "name" : "Tech House",
-          "content" : "As the name sounds, this genre is a fusion of techno and house music. While House music has a tempo between 118 and 135 beats per minute (bpm), Techno music has a tempo ranging from 130 to 150 bpm. Track playing is another favorite of mine: 'Stop It' by Fisher. (124 BPM)",
-          "link" :"https://en.wikipedia.org/wiki/Tech_house",
+          "name": "Tech House",
+          "content": "As the name sounds, this genre is a fusion of techno and house music. While House music has a tempo between 118 and 135 beats per minute (bpm), Techno music has a tempo ranging from 130 to 150 bpm. Track playing is another favorite of mine: 'Stop It' by Fisher. (124 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Tech_house",
           "bpm": "124",
           "audio": "techHouse"
         }
@@ -48,14 +70,16 @@
           "name": "Deep House",
           "content": "The BPM of Big Room House or EDM is commonly 126-132 BPM.  The name “deep house” is said to come from the fact that the tracks are slower and deeper than mainstream house music. It's also said that the deep moniker was given to the genre because of its soulful sound, which often features complex chord progressions and emotive melodies. Its origins are attributed to Larry Heard (aka Mr. Fingers). Audio available is his influential track 'Can You Feel It' (122 BPM)",
           "link": "https://en.wikipedia.org/wiki/Deep_house",
-          "bpm":"122",
-          "audio":"deepHouse"
+          "bpm": "122",
+          "audio": "deepHouse"
         },
-        { "name": "Electro House",
-      "content" : "Also known as electro swing, this is such a FUN genre to dance to. Combining either jazzy, funky or hip-hop vocals, it is modern and vintage at the same time. The example available is  'Lone Digger' by Caravan Palace. This music video is great! (123 BPM)",
-    "link": "https://en.wikipedia.org/wiki/Electro_swing#:~:text=Electro%20swing%2C%20or%20swing%20house,with%20house%20and%20hip%20hop.",
-  "bpm":"",
-"audio" :"electroHouse"},
+        {
+          "name": "Electro House",
+          "content": "Also known as electro swing, this is such a FUN genre to dance to. Combining either jazzy, funky or hip-hop vocals, it is modern and vintage at the same time. The example available is  'Lone Digger' by Caravan Palace. This music video is great! (123 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Electro_swing#:~:text=Electro%20swing%2C%20or%20swing%20house,with%20house%20and%20hip%20hop.",
+          "bpm": "",
+          "audio": "electroHouse"
+        },
         {
           "name": "Future House",
           "content": "Originating from Deep House, EDM and UK Garage. Characterised by a muted melody with a metallic, elastic-sounding drop and frequency-modulated basslines. The rhythm may borrow from UK Garage and include a more sparse drum pattern allowing more space in the mix for synths to shine through. Stylistically it sounds like a muted version of EDM or ‘poolside’ EDM.(126 BPM) ",
@@ -68,15 +92,28 @@
     {
       "name": "Dubstep",
       "children": [
-        { "name": "Classic Dubstep" , "content" : "Dubstep has it's origins in the UK as an child of the genre UK Garage. Good tracks are often refered to as 'grimey' or 'filthy' - the filthier the better! Feature is a not so grimey classic for nice listening. Flux Pavilion's 'I Can't Stop' is the soundtrack of a genration.(140 BPM)",
-      "link": "https://en.wikipedia.org/wiki/Dubstep", "bpm" : "140", "audio":"classicDubstep"},
-        { "name": "Wobblestep",
-      "content": "Wobble Wobble! One characteristic of certain strands of dubstep is the wobble bass, often referred to as the 'wub', where an extended bass note is manipulated rhythmically. This style of bass is typically produced by using a low-frequency oscillator to manipulate certain parameters of a synthesiser such as volume, distortion or filter cutoff. Playing is 'Where's my Money' by Caspa with a tempo of 140 BPM. It can also be used half-time at 70 BPM or double-time at 280 BPM.",
-    "link": "https://en.wikipedia.org/wiki/Dubstep",
-  "bpm":"",
-"audio": "wobbleStep"},
+        {
+          "name": "Classic Dubstep",
+          "content": "Dubstep has it's origins in the UK as an child of the genre UK Garage. Good tracks are often refered to as 'grimey' or 'filthy' - the filthier the better! Feature is a not so grimey classic for nice listening. Flux Pavilion's 'I Can't Stop' is the soundtrack of a genration.(140 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Dubstep",
+          "bpm": "140",
+          "audio": "classicDubstep"
+        },
+        {
+          "name": "Wobblestep",
+          "content": "Wobble Wobble! One characteristic of certain strands of dubstep is the wobble bass, often referred to as the 'wub', where an extended bass note is manipulated rhythmically. This style of bass is typically produced by using a low-frequency oscillator to manipulate certain parameters of a synthesiser such as volume, distortion or filter cutoff. Playing is 'Where's my Money' by Caspa with a tempo of 140 BPM. It can also be used half-time at 70 BPM or double-time at 280 BPM.",
+          "link": "https://en.wikipedia.org/wiki/Dubstep",
+          "bpm": "",
+          "audio": "wobbleStep"
+        },
         { "name": "Chillstep" },
-        { "name": "Brostep" ,"content": "Ah! this is the subgenre that you think of when you think of dubstep, with Skrillex being the most well known name in the genre. It's characterized by being essentially more hardcore than it's UK counterparts, with heavily distorted bass synths, and lots of wubs. It accentuates the middle negative & uses robotic fluctuations & metal-esque aggression. Song playing is 'Scary Monsters and Nice Sprites' by Skrillex. (140 BPM) like it? Check out Excision and Datsik.","link" : "https://en.wikipedia.org/wiki/Dubstep#Brostep_and_American_developments", "bpm" : "140", "audio" : "brostep"}
+        {
+          "name": "Brostep",
+          "content": "Ah! this is the subgenre that you think of when you think of dubstep, with Skrillex being the most well known name in the genre. It's characterized by being essentially more hardcore than it's UK counterparts, with heavily distorted bass synths, and lots of wubs. It accentuates the middle negative & uses robotic fluctuations & metal-esque aggression. Song playing is 'Scary Monsters and Nice Sprites' by Skrillex. (140 BPM) like it? Check out Excision and Datsik.",
+          "link": "https://en.wikipedia.org/wiki/Dubstep#Brostep_and_American_developments",
+          "bpm": "140",
+          "audio": "brostep"
+        }
       ]
     },
     {
@@ -102,13 +139,6 @@
           "link": "https://en.wikipedia.org/wiki/Psychedelic_trance",
           "bpm": "150",
           "audio": "psyTrance"
-        },
-        {
-          "name": "Euro Trance",
-          "content": "",
-          "link": "",
-          "bpm": "",
-          "audio": ""
         }
       ]
     },
@@ -117,15 +147,22 @@
       "children": [
         {
           "name": "Hard Style",
-          "children": [{ "name": "Dub Style", "content" : "Dub Style is a fusion between hardstyle and dubstep where heavy bass kicks and dubstep-ish beats are usually present. It's still developing into a solid sub-genre. Audio is 'Nightmare' by Obsidia. BPM... unknown. Try the BPM slider and see if you can figure it out!",
-        "link": "https://fi.wikipedia.org/wiki/Dubstyle",
-      "bpm":"",
-    "audio":""}, 
-          { "name": "Jump Style",
-          "content" : "Light, bouncy and FAST, this genre has roots in the netherlands. Track available hit number one in holland in 2007 and was the first instrumental to hit #1 since 1995. 'Freefall by Jeckyll & Hyde'. (140 BPM)",
-          "link": "https://en.wikipedia.org/wiki/Jumpstyle",
-          "bpm":"140",
-          "audio": "jumpStyle" }]
+          "children": [
+            {
+              "name": "Dub Style",
+              "content": "Dub Style is a fusion between hardstyle and dubstep where heavy bass kicks and dubstep-ish beats are usually present. It's still developing into a solid sub-genre. Audio is 'Nightmare' by Obsidia. BPM... unknown. Try the BPM slider and see if you can figure it out!",
+              "link": "https://fi.wikipedia.org/wiki/Dubstyle",
+              "bpm": "",
+              "audio": ""
+            },
+            {
+              "name": "Jump Style",
+              "content": "Light, bouncy and FAST, this genre has roots in the netherlands. Track available hit number one in holland in 2007 and was the first instrumental to hit #1 since 1995. 'Freefall by Jeckyll & Hyde'. (140 BPM)",
+              "link": "https://en.wikipedia.org/wiki/Jumpstyle",
+              "bpm": "140",
+              "audio": "jumpStyle"
+            }
+          ]
         },
         {
           "name": "Speedcore",
@@ -139,7 +176,7 @@
           "content": "Originating from Hardcore, Hardcore Techno, New Beat, Acid House and Punk. Characterised by a super fast BPM, distorted kick drums and roared our shouted vocals reminiscent of punk. The BPM of Gabba is typically 180-190 BPM. An absolute classic is the link: 'Cuntface' by Nasenbluten (BPM)",
           "link": "https://en.wikipedia.org/wiki/Gabber",
           "bpm": "",
-          "audio" : "gabber"
+          "audio": "gabber"
         },
         { "name": "Industrial Hardcore" }
       ]
