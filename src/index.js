@@ -12,10 +12,11 @@ require("./scripts/audio");
 import { playAudio, darude } from "./scripts/audio";
 
 document.addEventListener("DOMContentLoaded", async () => {
+  playAudio(darude.path);
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  playAudio(darude.path);
+  
 });
 
 button.addEventListener("click", () => {
