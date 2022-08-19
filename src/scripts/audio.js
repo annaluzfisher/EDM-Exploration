@@ -75,6 +75,11 @@ const chillwave = {
   path: "music/Neon Indian - Annie (Official Audio).mp3",
 };
 
+const balearicTrance = {
+  genre: "balearicTrance",
+  path: "music/Sunlounger - White Sand (DJ Shah's Original Mix).mp3",
+};
+
 const AUDIOTRACKS = [
   house,
   detroitTechno,
@@ -93,7 +98,8 @@ const AUDIOTRACKS = [
   classicDubstep,
   dubStyle,
   tripHop,
-  chillwave
+  chillwave,
+  balearicTrance
 ];
 
 const resultMessage = document.getElementById("result");

@@ -8,7 +8,7 @@ import {
   bpmDiv,
 } from "./scripts/util";
 
-require("./scripts/audio");
+// require("./scripts/audio");
 import { playAudio, darude } from "./scripts/audio";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -23,6 +23,7 @@ button.addEventListener("click", () => {
   toggleOverviewVisibility();
   setTimeout(startTheShow, 3000);
 });
+
 
 const fetchA = async function () {
   const getEdmGenres = await fetch("data/data.json");

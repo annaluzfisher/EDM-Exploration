@@ -120,11 +120,11 @@
       "name": "Trance",
       "children": [
         {
-          "name": "Future Trance",
-          "content": "",
-          "link": "",
-          "bpm": "",
-          "audio": ""
+          "name": "Balearic Trance",
+          "content": "Balearic trance, also known as Ibiza trance is a trance music subgenre which evolved from Balearic beat. The earliest known Balearic trance compositions date back to a few years after the emergence of Balearic beat in the 1990s. Example audio: Roger Shah - 'White Sand'. (138 BPM)",
+          "link": "https://en.wikipedia.org/wiki/Balearic_trance",
+          "bpm": "138",
+          "audio": "balearicTrance"
         },
         {
           "name": "Hard Trance",
