@@ -12,7 +12,6 @@ require("./scripts/audio");
 import { playAudio, darude } from "./scripts/audio";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  playAudio(darude.path);
   startPage();
   let data = await fetchA();
   makeNodes(data);
@@ -20,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 button.addEventListener("click", () => {
+    playAudio(darude.path);
   toggleOverviewVisibility();
   setTimeout(startTheShow, 3000);
 });
