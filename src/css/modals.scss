@@ -89,7 +89,7 @@
   text-align: center;
    font-family: 'Blinker';
 }
-#content-box > div > p {
+#content-box div > p {
   font-family: 'Blinker';
   font-size: 1.3rem;
   padding: 1rem;
@@ -97,18 +97,30 @@
   z-index: 100;
   text-align: center;
 }
-#inner-content-box > div {
+#overview {
   margin-top: -10rem;
 }
+
+.fa-xmark {
+  position: relative;
+  color: rgb(247, 132, 0);
+  margin-left: 75%;
+  transform: translatey(30px);
+}
+
+.fa-xmark:hover{
+  color: rgb(140, 93, 5);
+}
+
 
 #title{
   font-size: 4rem;
   color: rgb(247, 132, 0);
   text-shadow: 2px 2px rgb(173, 81, 1);
-
 }
 
 #wikipedia{
+  position: relative;
   padding-top: 6%;
   padding-left: 3rem;
   padding-bottom: 1rem;
@@ -120,8 +132,8 @@
   padding: 4px;
 }
 
-#waveform:hover, #wikipedia:hover{
-transform: scale(1.2);
+#waveform:hover,  #wikipedia:hover{
+transform: scale(1.05);
 opacity:.8;
 text-shadow: 4,4,gray;
 }

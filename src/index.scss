@@ -70,22 +70,15 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: center;
 }
 
-#instructions > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
 
 #instructions > p {
-  transform: translatex(2rem);
   font-size: 1.6rem;
   color: rgb(65, 1, 156);
 }
+
 #dancer{
  position: fixed;
  z-index: -40;
