@@ -14,6 +14,8 @@ const hiddenSpace = document.getElementById("hidden-space");
 const bpmBar = document.getElementById('bpm-bar');
 const bpmDiv = document.getElementById('bpm');
  const root = document.querySelector(":root");
+const x = document.getElementById("x");
+
 
 let bubbles = [];
 
@@ -56,5 +58,5 @@ export {
   bpmBar,
   bpmDiv,
   root,
-
+  x
 };

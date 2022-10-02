@@ -1,4 +1,4 @@
-import { makeNodes } from "./scripts/node";
+import { makeNodes, clearThePage, clearTreeBelow, toggleBubbles } from "./scripts/node";
 import {
   startPage,
   button,
@@ -6,6 +6,8 @@ import {
   startTheShow,
   bpmBar,
   bpmDiv,
+  x,
+  bubbles,
 } from "./scripts/util";
 
 // require("./scripts/audio");
@@ -15,15 +17,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   startPage();
   let data = await fetchA();
   makeNodes(data);
-  
 });
 
 button.addEventListener("click", () => {
-    playAudio(darude.path);
+  playAudio(darude.path);
   toggleOverviewVisibility();
-  setTimeout(startTheShow, 3000);
+  setTimeout(startTheShow, 2300);
 });
-
 
 const fetchA = async function () {
   const getEdmGenres = await fetch("data/data.json");
@@ -31,9 +31,9 @@ const fetchA = async function () {
   return data;
 };
 
-window.addEventListener("click", (e) => {
-  console.log(e.target);
-});
+// window.addEventListener("click", (e) => {
+//   console.log(e.target);
+// });
 
 bpmBar.addEventListener("input", function () {
   let num = document.getElementById("bpm-number");
@@ -45,3 +45,18 @@ function setBpm(num) {
   let newSpeed = (60 / num).toFixed(2);
   bpmDiv.style["animation-duration"] = newSpeed + "s";
 }
+
+x.addEventListener("click", () => {
+  for (let node of bubbles) {
+    if (node.contentVisible()){
+       node.toggleContentVisibility();
+    setTimeout(() => {
+      clearTreeBelow(node);
+      clearThePage();
+      toggleBubbles(node.siblings);
+      node.toggleBubbleVisibility();
+    }, 900);
+  }
+  break;
+  }
+});

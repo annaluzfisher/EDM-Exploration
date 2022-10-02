@@ -154,7 +154,7 @@ function handleBubbleClick(node) {
     clearThePage();
     toggleBubbles(node.siblings);
     node.toggleBubbleVisibility();
-    },800);
+    },900);
 
   }
 }
@@ -174,4 +174,4 @@ function clearThePage() {
   });
 }
 
-export { makeNodes };
+export { toggleBubbles, makeNodes, clearThePage, clearTreeBelow };

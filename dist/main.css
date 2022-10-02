@@ -128,7 +128,7 @@
   width: 55%;
   min-width: 600px;
   height: 60%;
-  min-height: 450px;
+  min-height: 600px;
   background-color: rgb(255, 145, 0);
   margin-left: 15%;
   margin-top: 7%;
@@ -218,10 +218,6 @@
   color: rgb(116, 0, 107);
   z-index: 100;
   text-align: center;
-}
-
-#overview {
-  margin-top: -10rem;
 }
 
 .fa-xmark {
