@@ -1,20 +1,22 @@
 
+@import "./css/modals.scss";
 @import "./css/bubbles.scss";
 @import "./css/audio.scss";
 @import "./css/nav-bar.scss";
-@import "./css/modals.scss";
 body {
   font-family: "Bungee Outline";
   font-weight: 600;
     background-color: rgb(10, 0, 29);
+
 }
 
 .hidden {
   z-index: -100;
   opacity: 100;
   animation-name: pop-away;
-  animation-duration: 1.4s;
+  animation-duration: 1.3s;
   visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 @keyframes pop-away {
@@ -50,6 +52,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 #tree {

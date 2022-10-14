@@ -87,9 +87,11 @@ class Node {
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");
     let content = document.getElementById("description");
+   
     setTimeout(()=>{
       content.innerText = "";
-    },1000) 
+    
+    },700) 
 
   }
 
