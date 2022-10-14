@@ -72,7 +72,6 @@ class Node {
   }
 
   displayContent() {
-    console.log(this.content);
     let content = document.getElementById("description");
     content.innerText = `${this.content}`;
     let link = document.getElementById("wikipedia");
@@ -88,11 +87,19 @@ class Node {
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");
     let content = document.getElementById("description");
-    content.innerText = "";
+    setTimeout(()=>{
+      content.innerText = "";
+    },1000) 
+
   }
 
+  contentDisplayed() {
+     let title = document.getElementById("title");
+   
+      return (this.contentVisible() && title.innerText === this.name)
+  }
   contentVisible() {
-    return ![...contentBox.classList].includes("hidden");
+    return ![...contentBox.classList].includes("hidden")
   }
 
   addListeners() {
@@ -154,7 +161,7 @@ function handleBubbleClick(node) {
     clearThePage();
     toggleBubbles(node.siblings);
     node.toggleBubbleVisibility();
-    },900);
+    },1000);
 
   }
 }

@@ -48,7 +48,7 @@ function setBpm(num) {
 
 x.addEventListener("click", () => {
   for (let node of bubbles) {
-    if (node.contentVisible()){
+    if (node.contentDisplayed()){
        node.toggleContentVisibility();
     setTimeout(() => {
       clearTreeBelow(node);
@@ -56,7 +56,7 @@ x.addEventListener("click", () => {
       toggleBubbles(node.siblings);
       node.toggleBubbleVisibility();
     }, 900);
+    break;
   }
-  break;
   }
 });
