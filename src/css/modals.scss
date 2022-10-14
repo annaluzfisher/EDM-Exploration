@@ -123,12 +123,12 @@
   text-shadow: 2px 2px rgb(173, 81, 1);
 }
 
-#wikipedia{
-  position: relative;
+.fa-wikipedia-w{
   padding-bottom: 1rem;
   color:rgb(77, 247, 86);
   font-size: 3rem;
   filter:drop-shadow( 0 0 7px 2px rgb(200, 250, 174));
+     transition: all .2s ease-out;
 }
 
 #waveform{
@@ -136,12 +136,13 @@
   color: rgb(75, 4, 157);
   padding: 20px;
     filter:drop-shadow( 0 0 7px 2px rgb(200, 250, 174));
+    transition: all .2s ease-out;
 }
 
-#waveform:hover,  #wikipedia:hover{
+#waveform:hover,  .fa-wikipedia-w:hover{
 
-opacity:1;
-text-shadow: 4,4,gray;
+text-shadow: 0 0 5px rgb(250, 132, 42);
+
 }
 
 

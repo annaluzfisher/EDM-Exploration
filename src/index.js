@@ -31,9 +31,7 @@ const fetchA = async function () {
   return data;
 };
 
-// window.addEventListener("click", (e) => {
-//   console.log(e.target);
-// });
+
 
 bpmBar.addEventListener("input", function () {
   let num = document.getElementById("bpm-number");

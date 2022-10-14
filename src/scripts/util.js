@@ -35,10 +35,6 @@ function startTheShow() {
 }
 
 
-// function updateBpm (){
-//    let num = document.getElementById("bpm-number");
-//    num.innerHTML = bpmBar.value;
-// }
 
 export {
   hiddenSpace,

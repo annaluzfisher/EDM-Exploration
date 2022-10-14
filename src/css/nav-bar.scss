@@ -6,6 +6,9 @@
   justify-content: space-between;
 
 }
+a{
+  transition: all .8s ease-in-out;
+}
 #nav-left {
   margin-left: 1rem;
   display: flex;
