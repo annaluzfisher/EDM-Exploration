@@ -22,6 +22,6 @@ additional features to be added include:
 The hardest part of the project for me was designing the code. I wanted it to be malleable. If a new sub-genre is added, I wanted to dom elements to automatically reflect that. Using OOP to create a class that both keeps track of the js object and the respective dom element was fun! Once the core structure of my 'node' class was created the implementation followed easily. 
 The functions below are in charge of creating all the nodes stored in a 'bubbles'. Each 'bubble' in the array represents an instance of the node class, which in turn has a this.bubble that refers to it's DOM elemnt counterpart. The dom element is created with event listeners included. 
  
-
+<img width="400" src="https://github.com/annaluzfisher/EDM-Exploration/blob/main/data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.30%20PM.png?raw=true">
 ![image](https://github.com/annaluzfisher/EDM-Exploration/blob/main/data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.30%20PM.png?raw=true)
 
