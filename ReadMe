@@ -23,5 +23,8 @@ The hardest part of the project for me was designing the code. I wanted it to be
 The functions below are in charge of creating all the nodes stored in a 'bubbles'. Each 'bubble' in the array represents an instance of the node class, which in turn has a this.bubble that refers to it's DOM elemnt counterpart. The dom element is created with event listeners included. 
  
 
-currentEDM 2/data/snippets/Screen Shot 2022-10-15 at 12.06.30 PM.png
 
+
+![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.43%20PM.png)
+![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.30%20PM.png)
+![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.56%20PM.png)
