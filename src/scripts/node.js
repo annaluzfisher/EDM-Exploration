@@ -18,7 +18,7 @@ class Node {
   }
 
   getContent(content) {
-    if (typeof content === 'undefined')
+    if (typeof content === "undefined")
       return "there is no info for this subgenre";
     else {
       return content;
@@ -82,26 +82,23 @@ class Node {
     title.innerText = `${this.name}`;
     contentBox.classList.toggle("hidden");
   }
-  
 
   toggleContentVisibility() {
     contentBox.classList.toggle("hidden");
     let content = document.getElementById("description");
-   
-    setTimeout(()=>{
-      content.innerText = "";
-    
-    },700) 
 
+    setTimeout(() => {
+      content.innerText = "";
+    }, 700);
   }
 
   contentDisplayed() {
-     let title = document.getElementById("title");
-   
-      return (this.contentVisible() && title.innerText === this.name)
+    let title = document.getElementById("title");
+
+    return this.contentVisible() && title.innerText === this.name;
   }
   contentVisible() {
-    return ![...contentBox.classList].includes("hidden")
+    return ![...contentBox.classList].includes("hidden");
   }
 
   addListeners() {
@@ -158,13 +155,12 @@ function handleBubbleClick(node) {
     }
   } else if (node.in(tree)) {
     if (node.contentVisible()) node.toggleContentVisibility();
-    setTimeout( () => {
-  clearTreeBelow(node);
-    clearThePage();
-    toggleBubbles(node.siblings);
-    node.toggleBubbleVisibility();
-    },1000);
-
+    setTimeout(() => {
+      clearTreeBelow(node);
+      clearThePage();
+      toggleBubbles(node.siblings);
+      node.toggleBubbleVisibility();
+    }, 1000);
   }
 }
 
