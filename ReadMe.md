@@ -24,3 +24,9 @@ The functions below are in charge of creating all the nodes stored in a 'bubbles
  
 
 ![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.30%20PM.png)
+
+
+![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.43%20PM.png)
+
+
+![](data/snippets/Screen%20Shot%202022-10-15%20at%2012.06.56%20PM.png)
