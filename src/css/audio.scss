@@ -8,40 +8,47 @@
   flex-direction: row;
   justify-content: center;
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 40%;
   border-radius: 4rem;
-  height: 10%;
-  min-height: 80px;
-  width: fit-content;
-  min-width: 330px;
-  z-index: 70;
-  -webkit-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
-  -moz-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
-  box-shadow: 0 0 7px 2px rgb(102, 4, 231);
+  // height: 10%;
+  // min-height: 80px;
+  // width: fit-content;
+  // min-width: 330px;
+  // z-index: 70;
+
 }
 #player{
   display: flex;
   align-items: center;
+
 }
 #player > audio {
   position: relative;
+    transform: scale(1.4);
+      -webkit-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
+  -moz-box-shadow: 0 0 7px 2px rgb(102, 4, 231);
+  box-shadow: 0 0 7px 2px rgb(102, 4, 231);
+   border-radius: 4rem;
 }
 #player > audio::-webkit-media-controls-panel{
-  background-color:  rgb(98, 249, 87);
+  background-color:  rgb(208, 4, 130);
+  //     animation-name: bgcolorfade;
+  // animation-iteration-count: infinite;
+  // animation-duration: 15s;
+  // animation-fill-mode: forwards;
+  // transition: all .4s ease-in-out;
 }
 
 input[type="range"]::-webkit-slider-thumb{
   transform: scale(1.5);
   color:greenyellow;
   background-image:rgb(16, 250, 24);
-  animation-name: pulse-thumb;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
+
   transition: all .4s ease-in-out;
 }
 
-@keyframes pulse-thumb {
+@keyframes colorfade {
   0% {
     color:rgb(72, 231, 4);
   }
@@ -55,6 +62,21 @@ input[type="range"]::-webkit-slider-thumb{
       color:rgb(72, 231, 4);
   }
 }
+
+// @keyframes bgcolorfade {
+//   0% {
+//     background-color:rgb(144, 0, 228);
+//   }
+//   40% {
+//     background-color: rgb(255, 132, 1);
+//   }
+//   80% {
+//     background-color: rgb(255, 33, 118)
+//   }
+//   100%{
+//       background-color:rgb(155, 4, 231);
+//   }
+// }
 input[type="range"]::-webkit-slider-thumb:hover{
   transform: scale(2);
 }
@@ -148,7 +170,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 330px;
   height:50px;
   overflow: hidden;
-  border: 1px solid white;
+
 }
 
 #scroller{
