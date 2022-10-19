@@ -226,8 +226,12 @@
   animation-name: show-less;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  margin: 2rem;
   transition: all 1s ease-in-out;
+}
+
+#main-content > .visible-bubble {
+  margin: 4rem;
+  margin-top: 5rem;
 }
 
 .visible-bubble:hover {
@@ -285,8 +289,8 @@
 }
 
 #tree > div {
-  height: 6rem;
-  width: 6rem;
+  height: 9rem;
+  width: 9rem;
   animation-name: show;
   animation-duration: 1s;
   animation-iteration-count: 1;
